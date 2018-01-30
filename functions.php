@@ -92,7 +92,7 @@ add_action( 'after_setup_theme', 'donovan_setup' );
  * @global int $content_width
  */
 function donovan_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'donovan_content_width', 840 );
+	$GLOBALS['content_width'] = apply_filters( 'donovan_content_width', 910 );
 }
 add_action( 'after_setup_theme', 'donovan_content_width', 0 );
 
