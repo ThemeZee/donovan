@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.0.1 =
+* changed default background color
+
 = 1.0 =
 Initial Release
 

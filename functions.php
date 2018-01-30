@@ -55,7 +55,7 @@ if ( ! function_exists( 'donovan_setup' ) ) :
 
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'donovan_custom_background_args', array(
-			'default-color' => 'f0f0f0',
+			'default-color' => 'cccccc',
 		) ) );
 
 		// Set up the WordPress core custom logo feature.
