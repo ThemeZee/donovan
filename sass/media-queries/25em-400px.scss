@@ -1,0 +1,54 @@
+@media only screen and (min-width: 25em) {
+    .container {
+	  padding-left: 1rem;
+	  padding-right: 1rem;
+	}
+
+    .primary-navigation-container {
+    	padding: 0;
+    }
+
+	.site-header,
+	.widget,
+	.page-header,
+    .site-main > article,
+    .post-wrapper > article,
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.comment,
+	.comments-title,
+	.comment-navigation,
+	.comment-respond,
+    .post-navigation .nav-links .nav-previous,
+    .post-navigation .nav-links .nav-next,
+	.pagination,
+	.infinite-scroll #infinite-handle span {
+		margin-bottom: 1rem;
+        border-bottom: none;
+	}
+
+    .pagination,
+    .infinite-scroll #infinite-handle,
+    .infinite-scroll .infinite-loader {
+    	padding: 0;
+    	background: none;
+    	border-bottom: none;
+    }
+
+    .pagination .page-numbers,
+    .pagination .current {
+    	padding: 0.35rem 1rem;
+    	margin-right: 0.5rem;
+    }
+
+    .site-footer .site-info {
+    	padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Breadcrumbs */
+    .breadcrumbs {
+    	padding: 0.5rem 0;
+    }
+}

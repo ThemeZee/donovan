@@ -1,0 +1,32 @@
+@media only screen and (min-width: 55em) {
+	@supports ( display: grid ) {
+		/* Sidebar Left Layout */
+		.sidebar-left .site-content {
+			grid-template-columns: 3fr 7fr;
+		}
+
+		.sidebar-left .content-area {
+			grid-column-start: 2;
+		}
+
+		.sidebar-left .sidebar {
+			grid-column-start: 1;
+		}
+	}
+}
+
+/* CSS Grid Fallback for Internet Explorer */
+@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	/* Sidebar Left Layout */
+	.sidebar-left .content-area {
+		order: 2;
+		padding-right: 0;
+		padding-left: 0.75rem;
+	}
+
+	.sidebar-left .sidebar {
+		order: 1;
+		padding-left: 0;
+		padding-right: 0.75rem;
+	}
+}

@@ -1,0 +1,20 @@
+@media only screen and (min-width: 50em) {
+    .entry-title {
+        @include font-size(32);
+    }
+
+    /* Blog Layout Title */
+    .blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+    .blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+        @include font-size(24);
+    }
+
+    /* Gallery */
+	.gallery-columns-8 {
+		grid-template-columns: repeat(8, 1fr);
+	}
+
+	.gallery-columns-9 {
+		grid-template-columns: repeat(9, 1fr);
+	}
+}

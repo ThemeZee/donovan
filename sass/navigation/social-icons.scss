@@ -1,0 +1,42 @@
+.donovan-social-menu .social-icons-menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	justify-content: center;
+}
+
+.donovan-social-menu .social-icons-menu li {
+	margin: 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+}
+
+.donovan-social-menu .social-icons-menu li a {
+    display: block;
+	margin: 0 3px 3px 0;
+	padding: 0.6rem 0.8rem 0.65rem;
+	background: rgba(0,0,0,0.05);
+}
+
+.donovan-social-menu .social-icons-menu li a:hover,
+.donovan-social-menu .social-icons-menu li a:active {
+	background: rgba(0,0,0,0.1);
+	text-decoration: none;
+}
+
+.donovan-social-menu .social-icons-menu li a .icon {
+	margin: 0;
+	width: 24px;
+	height: 24px;
+	vertical-align: middle;
+	fill: #202020;
+}

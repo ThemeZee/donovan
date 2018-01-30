@@ -1,0 +1,31 @@
+/* Archives and Search Heading */
+.archive-header {
+	margin: 0 0 1rem;
+	padding: 1.5rem;
+	max-width: 100%;
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	background: #fff;
+}
+
+.archive-title {
+	margin: 0;
+	padding: 0;
+	@include color(--title-color);
+	-ms-word-wrap: break-word;
+	word-wrap: break-word;
+	@include font-size(18);
+	@include font-family(--widget-title-font);
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.blog-description,
+.archive-description,
+.archive-description p {
+	margin: 0.25em 0 0;
+}
+
+.archive-header .search-form {
+	margin: 1.25rem 0 0;
+}

@@ -1,0 +1,83 @@
+/* Styling for all post details */
+.entry-meta,
+.entry-footer {
+	color: rgba(0,0,0,0.5);
+	@include font-size(15);
+}
+
+.entry-meta a:link,
+.entry-meta a:visited,
+.entry-footer a:link,
+.entry-footer a:visited {
+	color: rgba(0,0,0,0.5);
+	text-decoration: none;
+}
+
+.entry-meta a:hover,
+.entry-meta a:active,
+.entry-footer a:hover,
+.entry-footer a:active {
+	color: $textColor;
+}
+
+/* Entry Meta */
+.entry-meta {
+	margin: 0.5em 0;
+}
+
+.entry-meta a:link,
+.entry-meta a:visited {
+	border-bottom: 1px dotted rgba(0,0,0,0.15);
+}
+
+.entry-meta a:hover,
+.entry-meta a:active {
+	text-decoration: none;
+}
+
+.entry-meta .updated:not(.published) {
+	display: none;
+}
+
+/* Entry Footer */
+.entry-footer {
+	margin: 1.5rem 0 0;
+	padding: 1rem 0 0;
+	border-top: 2px solid rgba(0,0,0,0.05);
+}
+
+.entry-footer div .icon {
+	margin: 0.2em 0.5em 0 0;
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+	fill: rgba(0,0,0,0.3);
+}
+
+.entry-footer .entry-comments .icon {
+	margin-top: 0.3em;
+}
+
+/* Hide post meta if they are deactivated in settings */
+body.date-hidden .type-post .entry-meta .meta-date,
+body.author-hidden .type-post .entry-meta .meta-author,
+body.categories-hidden .type-post .entry-footer .entry-categories,
+body.tags-hidden .type-post .entry-footer .entry-tags {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	width: 1px;
+	height: 1px;
+}
+
+body.date-hidden.author-hidden .content-area .entry-meta {
+	display: none;
+}
+
+body.single-post.categories-hidden.tags-hidden .type-post .entry-footer {
+	display: none;
+}
+
+body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
+	display: none;
+}

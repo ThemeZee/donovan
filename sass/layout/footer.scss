@@ -1,0 +1,25 @@
+.footer-wrap {
+	@include background(--footer-color);
+}
+
+.site-footer {
+	@include font-size(16);
+	@include font-family(--navi-font);
+}
+
+.site-footer a:link,
+.site-footer a:visited {
+	@include color(--footer-text-color);
+	text-decoration: none;
+}
+
+.site-footer a:hover,
+.site-footer a:active {
+	@include color(--footer-hover-text-color);
+}
+
+.site-footer .site-info {
+	padding: 1.5rem;
+	text-align: center;
+	@include color(--footer-hover-text-color);
+}

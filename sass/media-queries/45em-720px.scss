@@ -1,0 +1,14 @@
+@media only screen and (min-width: 45em) {
+	/* Gallery */
+	.gallery-columns-5 {
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.gallery-columns-6 {
+		grid-template-columns: repeat(6, 1fr);
+	}
+
+	.gallery-columns-7 {
+		grid-template-columns: repeat(7, 1fr);
+	}
+}

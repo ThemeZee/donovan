@@ -1,0 +1,189 @@
+@media only screen and (min-width: 55em) {
+	@supports ( display: grid ) {
+		.site-content {
+			display: grid;
+			grid-template-columns: 7fr 3fr;
+			grid-column-gap: 1.5rem;
+		}
+
+		.content-area {
+			box-sizing: border-box;
+			grid-row-start: 2;
+			grid-column-start: 1;
+			min-width: 0;
+		}
+
+		.sidebar {
+			grid-row-start: 2;
+			grid-column-start: 2;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: none;
+			min-width: 0;
+		}
+	}
+
+	/* Header */
+	.header-main {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		text-align: left;
+	}
+
+	.header-social-menu {
+		display: flex;
+		margin-top: 0;
+		margin-left: auto;
+		align-items: center;
+	}
+
+	.site-footer .site-info {
+		text-align: left;
+	}
+
+	.entry-title {
+		@include font-size(28);
+	}
+
+	/* Blog Layout Title */
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+		@include font-size(20);
+	}
+
+	/*** Main Navigation ***/
+	.main-navigation-toggle {
+		display: none;
+	}
+
+	.main-navigation-menu {
+		position: relative;
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
+		display: flex !important;
+		-ms-flex-flow: row wrap;
+		flex-flow: row wrap;
+		border-top: none;
+		padding: 0 0.25rem;
+	}
+
+	.main-navigation-menu a {
+		padding: 1em 1.25em;
+		border: none;
+	}
+
+	.main-navigation-menu > .menu-item-has-children a .sub-menu-icon {
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.main-navigation-menu > .menu-item-has-children a .sub-menu-icon .icon {
+		margin: 0.5em 0 0 0.4em;
+		width: 14px;
+		height: 14px;
+	}
+
+	.main-navigation-menu > .menu-item-has-children a:hover .sub-menu-icon .icon {
+		@include fill(--navi-hover-text-color);
+	}
+
+	.main-navigation-menu ul {
+		position: absolute;
+		z-index: 99;
+		display: none;
+		border: 1px solid rgba(255, 255, 255, 0.075);
+		border: 1px solid var(--submenu-border-color);
+		border-top: none;
+		@include background(--submenu-color);
+		width: auto;
+	}
+
+	.main-navigation-menu ul li {
+		position: relative;
+		margin: 0;
+	}
+
+	.main-navigation-menu ul a {
+		min-width: 250px;
+		min-width: 16rem;
+		border-top: 1px solid rgba(255, 255, 255, 0.075);
+		border-top: 1px solid var(--submenu-border-color);
+	}
+
+	.main-navigation-menu ul a:link,
+	.main-navigation-menu ul a:visited {
+		@include color(--submenu-text-color);
+	}
+
+	.main-navigation-menu ul a:hover,
+	.main-navigation-menu ul a:active {
+		@include color(--submenu-hover-text-color);
+	}
+
+	.main-navigation-menu ul a,
+	.main-navigation-menu ul li ul a,
+	.main-navigation-menu ul li ul li ul a,
+	.main-navigation-menu ul li ul li ul li ul a {
+		padding: 1em;
+	}
+
+	.main-navigation-menu ul .menu-item-has-children a .sub-menu-icon .icon {
+		margin: 0.5em 0 0 0.4em;
+		width: 12px;
+		height: 12px;
+		@include fill(--submenu-text-color);
+		-webkit-transform: rotate(270deg);
+		transform: rotate(270deg);
+	}
+
+	.main-navigation-menu ul .menu-item-has-children a:hover .sub-menu-icon .icon,
+	.main-navigation-menu ul .menu-item-has-children a:active .sub-menu-icon .icon {
+		@include fill(--submenu-hover-text-color);
+	}
+
+	.main-navigation-menu li ul ul {
+		top: 0;
+		left: 100%;
+	}
+
+	.main-navigation-menu li.menu-item-has-children:hover > ul,
+	.main-navigation-menu li.page_item_has_children:hover > ul,
+	.main-navigation-menu li.menu-item-has-children[aria-expanded="true"] > ul {
+		display: block;
+	}
+
+	.main-navigation-menu li.current-menu-item > a {
+		text-decoration: underline;
+	}
+
+	.main-navigation-menu li.current-menu-item > a:after {
+		text-decoration: none;
+	}
+}
+
+/* CSS Grid Fallback for Internet Explorer */
+@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.site-content {
+		display: flex;
+	}
+
+	.no-sidebar .site-content {
+		display: block;
+	}
+
+	.content-area {
+		width: 70%;
+		box-sizing: border-box;
+		padding-right: 0.75rem;
+	}
+
+	.sidebar {
+		width: 30%;
+		box-sizing: border-box;
+		padding-left: 0.75rem;
+	}
+}

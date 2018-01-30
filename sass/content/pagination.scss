@@ -1,0 +1,72 @@
+/* Theme Pagination */
+.pagination {
+	margin-bottom: 0;
+	padding: 1.5rem;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.pagination .page-numbers,
+.pagination .current {
+	display: inline-block;
+	padding: 0.2rem 0.8rem;
+	margin-right: 3px;
+	text-align: center;
+	text-decoration: none;
+	@include color(--button-text-color);
+	@include background(--button-color);
+}
+
+.pagination .page-numbers.dots {
+	padding: 0 0.5rem;
+}
+
+.pagination .current,
+.pagination a:hover,
+.pagination a:active {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+}
+
+.pagination .current {
+	font-weight: bold;
+}
+
+/* Infinite Scroll Pagination */
+.infinite-scroll .pagination {
+	display: none;
+}
+
+.infinite-scroll #infinite-handle,
+.infinite-scroll .infinite-loader {
+	width: 100%;
+	text-align: center;
+	padding: 1.5rem;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.infinite-scroll .infinite-loader .spinner {
+	left: auto;
+	margin: 0 auto;
+}
+
+.infinite-scroll #infinite-handle span {
+	display: inline-block;
+	margin: 0;
+	padding: 0.5em 1em;
+	@include color(--button-text-color);
+	@include background(--button-color);
+	@include font-size(15);
+}
+
+.infinite-scroll #infinite-handle span:hover {
+	@include color(--button-hover-text-color);
+	@include background(--button-hover-color);
+	text-decoration: none;
+}
+
+.blog-grid-layout.infinite-scroll .content-archive .post-wrapper #infinite-handle,
+.blog-grid-layout.infinite-scroll .content-archive .post-wrapper .infinite-loader {
+	grid-column: 1 / span 2;
+}
