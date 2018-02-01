@@ -1449,7 +1449,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	margin: 0;
 	padding: 0;
 	color: #202020;
-	color: var(--title-color);
+	color: var(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 18px;
@@ -1480,7 +1480,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	margin: 0 0 1em;
 	padding: 1.5rem;
 	color: #202020;
-	color: var(--title-color);
+	color: var(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	font-size: 18px;

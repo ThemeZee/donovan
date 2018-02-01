@@ -3,7 +3,7 @@
 .comment-reply-title {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	@include color(--title-color);
+	@include color(--widget-title-color);
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	@include font-size(18);
