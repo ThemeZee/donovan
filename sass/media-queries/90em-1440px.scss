@@ -1,0 +1,14 @@
+@media only screen and (min-width: 90em) {
+	.entry-title {
+		@include font-size(36);
+	}
+
+	.entry-content {
+		@include font-size(18);
+	}
+
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-content,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-content {
+		@include font-size(17);
+	}
+}

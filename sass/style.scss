@@ -225,6 +225,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import 'media-queries/75em-1200px';
 
 /*--------------------------------------------------------------
+## - Greater than 1440px
+--------------------------------------------------------------*/
+@import 'media-queries/90em-1440px';
+
+/*--------------------------------------------------------------
 ## - Media Print
 --------------------------------------------------------------*/
 @import 'media-queries/media-print';

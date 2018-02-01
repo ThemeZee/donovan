@@ -2907,6 +2907,27 @@ ul.related-posts-list {
 }
 
 /*--------------------------------------------------------------
+## - Greater than 1440px
+--------------------------------------------------------------*/
+@media only screen and (min-width: 90em) {
+	.entry-title {
+		font-size: 36px;
+		font-size: 2.25rem;
+	}
+
+	.entry-content {
+		font-size: 18px;
+		font-size: 1.125rem;
+	}
+
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-content,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-content {
+		font-size: 17px;
+		font-size: 1.0625rem;
+	}
+}
+
+/*--------------------------------------------------------------
 ## - Media Print
 --------------------------------------------------------------*/
 @media print {
