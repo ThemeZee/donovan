@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/donovan/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Donovan is a flexible yet easy to use blogging theme with a clean and modern design. It features an elegant mobile first design, three different blog layouts and extensive post settings. Donovan is perfect for your personal blog or any content focused website.
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: donovan
@@ -1003,7 +1003,6 @@ textarea {
 	margin: 0;
 	padding: 1.5rem;
 	max-width: 100%;
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	background: #fff;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -1014,8 +1013,6 @@ textarea {
 	padding: 0;
 	color: #202020;
 	color: var(--widget-title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-family: Quicksand, Tahoma, Arial;
@@ -1133,6 +1130,8 @@ textarea {
 	box-sizing: border-box;
 	background: #fff;
 	border-bottom: 1px solid #f5f5f5;
+	min-width: 0;
+	word-wrap: break-word;
 }
 
 .entry-title {
@@ -1141,8 +1140,6 @@ textarea {
 	padding: 0;
 	color: #202020;
 	color: var(--title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	font-size: 20px;
 	font-size: 1.25rem;
 	font-family: Quicksand, Tahoma, Arial;
@@ -1311,7 +1308,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	margin: 0;
 	padding: 1.5em;
 	max-width: 100%;
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	background: #fff;
 	box-sizing: border-box;
@@ -1440,7 +1436,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	margin: 0 0 1rem;
 	padding: 1.5rem;
 	max-width: 100%;
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	background: #fff;
 }
@@ -1450,8 +1445,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 0;
 	color: #202020;
 	color: var(--widget-title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-family: Quicksand, Tahoma, Arial;
@@ -1473,6 +1466,9 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 /*--------------------------------------------------------------
 # - Comments
 --------------------------------------------------------------*/
+.comments-area {
+	word-wrap: break-word;
+}
 
 /* Comment Header */
 .comments-title,
@@ -1481,8 +1477,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 1.5rem;
 	color: #202020;
 	color: var(--widget-title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	font-size: 18px;
 	font-size: 1.125rem;
 	font-family: Quicksand, Tahoma, Arial;
@@ -1506,8 +1500,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
@@ -1561,10 +1553,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 0.2em 0 0;
 }
 
-.comment-content a {
-	word-wrap: break-word;
-}
-
 .comment ol.children {
 	margin: 1.5em 0 0;
 	list-style: none;
@@ -1592,8 +1580,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
@@ -1630,8 +1616,6 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment-respond {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
@@ -1846,7 +1830,6 @@ object {
 	margin: 0;
 	padding: 1rem 1.5rem 0;
 	width: 100%;
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	background: #fff;
 }

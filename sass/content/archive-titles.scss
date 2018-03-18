@@ -3,7 +3,6 @@
 	margin: 0 0 1rem;
 	padding: 1.5rem;
 	max-width: 100%;
-	-ms-word-wrap: break-word;
 	word-wrap: break-word;
 	background: #fff;
 }
@@ -12,8 +11,6 @@
 	margin: 0;
 	padding: 0;
 	@include color(--widget-title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	@include font-size(18);
 	@include font-family(--widget-title-font);
 	font-weight: normal;

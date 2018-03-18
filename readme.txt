@@ -26,6 +26,11 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.0.2 =
+* increased font sizes on large screens
+* updated color variables and content width
+* fixed some minor CSS Grid issues
+
 = 1.0.1 =
 * changed default background color
 

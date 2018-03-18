@@ -1,11 +1,13 @@
+.comments-area {
+	word-wrap: break-word;
+}
+
 /* Comment Header */
 .comments-title,
 .comment-reply-title {
 	margin: 0 0 1em;
 	padding: 1.5rem;
 	@include color(--widget-title-color);
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	@include font-size(18);
 	@include font-family(--widget-title-font);
 	font-weight: normal;
@@ -27,8 +29,6 @@
 .comment {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
@@ -82,10 +82,6 @@
 	padding: 0.2em 0 0;
 }
 
-.comment-content a {
-	word-wrap: break-word;
-}
-
 .comment ol.children {
 	margin: 1.5em 0 0;
 	list-style: none;
@@ -112,8 +108,6 @@
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
@@ -150,8 +144,6 @@
 .comment-respond {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	-ms-word-wrap: break-word;
-	word-wrap: break-word;
 	background: #fff;
 }
 
