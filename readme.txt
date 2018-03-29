@@ -26,6 +26,10 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.0.3 =
+* added wp_page_links() function in content.php
+* improved comments title
+
 = 1.0.2 =
 * increased font sizes on large screens
 * updated color variables and content width

@@ -27,14 +27,10 @@ if ( post_password_required() ) {
 
 		<h2 class="comments-title">
 			<?php
-			$comment_count = get_comments_number();
-			printf( // WPCS: XSS OK.
-				/* translators: 1: comment count number, 2: title. */
-				esc_html( _nx( 'One comment', '%s comments', $comment_count, 'comments title', 'donovan' ) ),
-				number_format_i18n( $comment_count )
-			);
+				printf( _n( 'One thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', get_comments_number(), 'donovan' ),
+				number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
 			?>
-		</h2><!-- .comments-title -->
+		</h2>
 
 		<?php the_comments_navigation(); ?>
 

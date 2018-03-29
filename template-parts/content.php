@@ -22,7 +22,14 @@
 		</header><!-- .entry-header -->
 
 		<div class="entry-content clearfix">
+
 			<?php the_content( esc_html__( 'Continue reading', 'donovan' ) ); ?>
+
+			<?php wp_link_pages( array(
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'donovan' ),
+				'after'  => '</div>',
+			) ); ?>
+
 		</div><!-- .entry-content -->
 
 	</div>
