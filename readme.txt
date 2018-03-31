@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.0.4 =
+* changed implementation of comments title
+
 = 1.0.3 =
 * added wp_page_links() function in content.php
 * improved comments title
