@@ -26,6 +26,10 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.1 =
+* added default theme fonts as local fonts
+* use local fonts instead of Google fonts for GDPR compliance
+
 = 1.0.4 =
 * changed implementation of comments title
 
