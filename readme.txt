@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.1.1 =
+* updated text strings for improved localization
+
 = 1.1 =
 * added default theme fonts as local fonts
 * use local fonts instead of Google fonts for GDPR compliance
