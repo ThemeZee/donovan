@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Donovan\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2018-01-30 11:04+0100\n"
+"POT-Creation-Date: 2018-04-27 09:58+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -27,19 +27,24 @@ msgstr ""
 
 #: 404.php:24
 msgid ""
-"It looks like nothing was found at this location. Maybe try a search or one "
-"of the links below?"
+"Looks like nothing was found at this location. Maybe you can try a search or "
+"follow one of the links below?"
 msgstr ""
 
-#: comments.php:33
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:40
 #, php-format
 msgctxt "comments title"
-msgid "One comment"
-msgid_plural "%s comments"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: comments.php:55
+#: comments.php:64
 msgid "Comments are closed."
 msgstr ""
 
@@ -56,6 +61,7 @@ msgid "Sidebar"
 msgstr ""
 
 #: functions.php:110
+msgctxt "widget area description"
 msgid "Appears on posts and pages except the full width template."
 msgstr ""
 
@@ -81,7 +87,7 @@ msgstr ""
 #: inc/customizer/controls/upgrade-control.php:28 inc/theme-info.php:113
 #, php-format
 msgid ""
-"Purchase the %s Pro Add-on and get additional features and advanced "
+"Purchase the %s Pro Add-on to get additional features and advanced "
 "customization options."
 msgstr ""
 
@@ -151,11 +157,12 @@ msgid "Theme Documentation"
 msgstr ""
 
 #: inc/customizer/customizer.php:163 inc/theme-info.php:50
-#: inc/theme-info.php:152
+#: inc/theme-info.php:153
 msgid "https://wordpress.org/support/theme/donovan/reviews/?filter=5"
 msgstr ""
 
 #: inc/customizer/customizer.php:164 inc/theme-info.php:50
+#: inc/theme-info.php:153
 msgid "Rate this theme"
 msgstr ""
 
@@ -313,7 +320,7 @@ msgstr ""
 msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:328 template-parts/content.php:25
+#: inc/template-tags.php:328 template-parts/content.php:26
 msgid "Continue reading"
 msgstr ""
 
@@ -357,18 +364,18 @@ msgstr ""
 
 #: inc/theme-info.php:57
 #, php-format
-msgid "Getting Started with %s"
+msgid "Getting started with %s"
 msgstr ""
 
 #: inc/theme-info.php:67
 msgid ""
-"You need help to setup and configure this theme? We got you covered with an "
-"extensive theme documentation on our website."
+"Need help to set up and configure this theme? We got you covered! Check out "
+"the extensive theme documentation on our website."
 msgstr ""
 
 #: inc/theme-info.php:71
 #, php-format
-msgid "View %s Documentation"
+msgid "View %s's documentation"
 msgstr ""
 
 #: inc/theme-info.php:80
@@ -386,20 +393,17 @@ msgstr ""
 msgid "Get more features"
 msgstr ""
 
-#: inc/theme-info.php:149
+#: inc/theme-info.php:150
 #, php-format
 msgid "%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)"
 msgstr ""
 
-#: inc/theme-info.php:151
+#: inc/theme-info.php:152
 msgid "https://themezee.com/"
 msgstr ""
 
-#: inc/theme-info.php:152
-msgid "Review Donovan"
-msgstr ""
-
-#: inc/theme-info.php:152
+#: inc/theme-info.php:153
+msgctxt "If you like this theme, rate it"
 msgid "rate it"
 msgstr ""
 
@@ -446,5 +450,6 @@ msgid ""
 msgstr ""
 
 #: template-parts/content-page.php:27 template-parts/content-single.php:29
+#: template-parts/content.php:29
 msgid "Pages:"
 msgstr ""

@@ -8,11 +8,11 @@ Tested up to: 5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Donovan is a flexible yet easy to use blogging theme with a clean and modern design.
+Donovan is a flexible, yet easy-to-use blogging theme with a clean and modern design.
 
 == Description ==
 
-Donovan is a flexible yet easy to use blogging theme with a clean and modern design. It features an elegant mobile first design, three different blog layouts and extensive post settings. Donovan is perfect for your personal blog or any content focused website.
+Donovan is a flexible, yet easy-to-use blogging theme with a clean and modern design. It features an elegant mobile-first design, three different blog layouts and extensive post settings. Donovan is perfect for your personal blog or for any content-focused website.
 
 For more information about Donovan please go to https://themezee.com/themes/donovan/
 

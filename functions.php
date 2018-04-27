@@ -107,7 +107,7 @@ function donovan_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'donovan' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Appears on posts and pages except the full width template.', 'donovan' ),
+		'description'   => esc_html_x( 'Appears on posts and pages except the full width template.', 'widget area description', 'donovan' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h4 class="widget-title">',

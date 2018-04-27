@@ -21,7 +21,7 @@ get_header(); ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content clearfix">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'donovan' ); ?></p>
+					<p><?php esc_html_e( 'Looks like nothing was found at this location. Maybe you can try a search or follow one of the links below?', 'donovan' ); ?></p>
 
 					<?php get_search_form(); ?>
 

@@ -54,7 +54,7 @@ function donovan_theme_info_page() {
 
 		<div id="getting-started">
 
-			<h3><?php printf( esc_html__( 'Getting Started with %s', 'donovan' ), $theme->display( 'Name' ) ); ?></h3>
+			<h3><?php printf( esc_html__( 'Getting started with %s', 'donovan' ), $theme->display( 'Name' ) ); ?></h3>
 
 			<div class="columns-wrapper clearfix">
 
@@ -64,11 +64,11 @@ function donovan_theme_info_page() {
 						<h4><?php esc_html_e( 'Theme Documentation', 'donovan' ); ?></h4>
 
 						<p class="about">
-							<?php esc_html_e( 'You need help to setup and configure this theme? We got you covered with an extensive theme documentation on our website.', 'donovan' ); ?>
+							<?php esc_html_e( 'Need help to set up and configure this theme? We got you covered! Check out the extensive theme documentation on our website.', 'donovan' ); ?>
 						</p>
 						<p>
 							<a href="<?php echo esc_url( __( 'https://themezee.com/docs/donovan-documentation/', 'donovan' ) . '?utm_source=theme-info&utm_medium=button&utm_campaign=donovan&utm_content=documentation' ); ?>" target="_blank" class="button button-secondary">
-								<?php printf( esc_html__( 'View %s Documentation', 'donovan' ), 'Donovan' ); ?>
+								<?php printf( esc_html__( "View %s's documentation", 'donovan' ), 'Donovan' ); ?>
 							</a>
 						</p>
 					</div>
@@ -110,7 +110,7 @@ function donovan_theme_info_page() {
 						<h4><?php esc_html_e( 'Pro Version Add-on', 'donovan' ); ?></h4>
 
 						<p class="about">
-							<?php printf( esc_html__( 'Purchase the %s Pro Add-on and get additional features and advanced customization options.', 'donovan' ), 'Donovan' ); ?>
+							<?php printf( esc_html__( 'Purchase the %s Pro Add-on to get additional features and advanced customization options.', 'donovan' ), 'Donovan' ); ?>
 						</p>
 						<p>
 							<a href="<?php echo esc_url( __( 'https://themezee.com/addons/donovan-pro/', 'donovan' ) . '?utm_source=theme-info&utm_medium=button&utm_campaign=donovan&utm_content=pro-version' ); ?>" target="_blank" class="button button-secondary">
@@ -146,10 +146,11 @@ function donovan_theme_info_page() {
 
 		<div id="theme-author">
 
-			<p><?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'donovan' ),
-				$theme->display( 'Name' ),
-				'<a target="_blank" href="' . __( 'https://themezee.com/', 'donovan' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=donovan" title="ThemeZee">ThemeZee</a>',
-				'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) . '" title="' . esc_attr__( 'Review Donovan', 'donovan' ) . '">' . esc_html__( 'rate it', 'donovan' ) . '</a>'); ?>
+			<p>
+				<?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'donovan' ),
+					$theme->display( 'Name' ),
+					'<a target="_blank" href="' . __( 'https://themezee.com/', 'donovan' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=donovan" title="ThemeZee">ThemeZee</a>',
+					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) . '" title="' . esc_attr__( 'Rate this theme', 'donovan' ) . '">' . esc_html_x( 'rate it', 'If you like this theme, rate it', 'donovan' ) . '</a>'); ?>
 			</p>
 
 		</div>
