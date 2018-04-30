@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Donovan\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2018-04-27 09:58+0200\n"
+"POT-Creation-Date: 2018-04-30 17:39+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -62,7 +62,8 @@ msgstr ""
 
 #: functions.php:110
 msgctxt "widget area description"
-msgid "Appears on posts and pages except the full width template."
+msgid ""
+"Sidebar will appear on posts and pages, except with the full width template."
 msgstr ""
 
 #: functions.php:136
