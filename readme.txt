@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.1.2 =
+* updated Sidebar description text
+
 = 1.1.1 =
 * updated text strings for improved localization
 
