@@ -23,7 +23,7 @@
 
 		<div class="entry-content clearfix">
 
-			<?php the_content( esc_html__( 'Continue reading', 'donovan' ) ); ?>
+			<?php the_content( esc_html( donovan_get_option( 'read_more_text' ) ) ); ?>
 
 			<?php wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'donovan' ),

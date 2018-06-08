@@ -323,11 +323,17 @@ if ( ! function_exists( 'donovan_more_link' ) ) :
 	 * Displays the more link on posts
 	 */
 	function donovan_more_link() {
+
+		// Get Read More Text.
+		$read_more = donovan_get_option( 'read_more_text' );
+
+		if ( '' !== $read_more || is_customize_preview() ) :
 		?>
 
-		<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link"><?php esc_html_e( 'Continue reading', 'donovan' ); ?></a>
+			<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link"><?php echo esc_html( $read_more ); ?></a>
 
 		<?php
+		endif;
 	}
 endif;
 
