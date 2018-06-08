@@ -14,14 +14,14 @@
   "license": "GPL-3.0",
   "homepage": "https://bitbucket.org/ThemeZee/donovan#readme",
   "devDependencies": {
-    "autoprefixer": "^7.2.6",
+    "autoprefixer": "^8.6.1",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
     "gulp-rtlcss": "^1.2.0",
-    "gulp-sass": "^3.2.1",
+    "gulp-sass": "^4.0.1",
     "gulp-stylelint": "^5.0.0",
     "gulp-uglify": "^3.0.0",
     "postcss-sorting": "^3.1.0",
@@ -36,5 +36,6 @@
       "font-weight-notation": null,
       "max-line-length": null
     }
-  }
+  },
+  "dependencies": {}
 }

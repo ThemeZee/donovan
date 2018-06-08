@@ -169,6 +169,12 @@
 	margin-bottom: 0;
 }
 
+.comment-form input[type="checkbox"] + label {
+	display: inline;
+	padding-left: 0.5em;
+	font-weight: normal;
+}
+
 .comment-reply-title small a {
 	margin-left: 1em;
 	text-transform: none;
