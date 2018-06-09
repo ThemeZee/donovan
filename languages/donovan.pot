@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Donovan\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2018-04-30 17:39+0200\n"
+"POT-Creation-Date: 2018-06-09 13:05+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -167,6 +167,11 @@ msgstr ""
 msgid "Rate this theme"
 msgstr ""
 
+#: inc/customizer/default-options.php:61
+#: inc/customizer/sections/customizer-blog.php:139
+msgid "Continue reading"
+msgstr ""
+
 #: inc/customizer/sections/customizer-blog.php:19
 msgid "Blog Settings"
 msgstr ""
@@ -209,6 +214,10 @@ msgstr ""
 
 #: inc/customizer/sections/customizer-blog.php:118
 msgid "Excerpt Length"
+msgstr ""
+
+#: inc/customizer/sections/customizer-blog.php:146
+msgid "Read More Text"
 msgstr ""
 
 #: inc/customizer/sections/customizer-layout.php:19
@@ -321,36 +330,32 @@ msgstr ""
 msgid "% comments"
 msgstr ""
 
-#: inc/template-tags.php:328 template-parts/content.php:26
-msgid "Continue reading"
-msgstr ""
-
-#: inc/template-tags.php:344
+#: inc/template-tags.php:350
 msgctxt "post navigation"
 msgid "Previous Post"
 msgstr ""
 
-#: inc/template-tags.php:345
+#: inc/template-tags.php:351
 msgctxt "post navigation"
 msgid "Next Post"
 msgstr ""
 
-#: inc/template-tags.php:398
+#: inc/template-tags.php:404
 msgctxt "pagination"
 msgid "Previous Posts"
 msgstr ""
 
-#: inc/template-tags.php:399
+#: inc/template-tags.php:405
 msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
 
-#: inc/template-tags.php:413
+#: inc/template-tags.php:419
 #, php-format
 msgid "Powered by %1$s and %2$s."
 msgstr ""
 
-#: inc/template-tags.php:414
+#: inc/template-tags.php:420
 msgid "http://wordpress.org"
 msgstr ""
 
