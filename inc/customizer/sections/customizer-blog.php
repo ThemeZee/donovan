@@ -133,6 +133,22 @@ function donovan_customize_register_blog_settings( $wp_customize ) {
 		'render_callback'  => 'donovan_customize_partial_blog_content',
 		'fallback_refresh' => false,
 	) );
+
+	// Add Setting and Control for Read More Text.
+	$wp_customize->add_setting( 'donovan_theme_options[read_more_text]', array(
+		'default'           => esc_html__( 'Continue reading', 'donovan' ),
+		'type'              => 'option',
+		'transport'         => 'postMessage',
+		'sanitize_callback' => 'sanitize_text_field',
+	) );
+
+	$wp_customize->add_control( 'donovan_theme_options[read_more_text]', array(
+		'label'    => esc_html__( 'Read More Text', 'donovan' ),
+		'section'  => 'donovan_section_blog',
+		'settings' => 'donovan_theme_options[read_more_text]',
+		'type'     => 'text',
+		'priority' => 60,
+	) );
 }
 add_action( 'customize_register', 'donovan_customize_register_blog_settings' );
 

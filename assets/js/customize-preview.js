@@ -85,6 +85,13 @@
 		} );
 	} );
 
+	// Read More textfield.
+	wp.customize( 'donovan_theme_options[read_more_text]', function( value ) {
+		value.bind( function( to ) {
+			$( 'a.more-link' ).text( to );
+		} );
+	} );
+
 	// Blog Layout.
 	wp.customize( 'donovan_theme_options[blog_layout]', function( value ) {
 		value.bind( function( newval ) {
