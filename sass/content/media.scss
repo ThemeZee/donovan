@@ -18,11 +18,10 @@ object {
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 	max-width: 100%;
 	@include font-size(15);
 	color: rgba(0,0,0,0.6);
-	width: auto !important;
 }
 
 .wp-caption img[class*="wp-image-"] {

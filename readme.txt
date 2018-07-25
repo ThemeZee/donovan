@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.2.1 =
+* fixed broken layout for aligned images with captions
+
 = 1.2 =
 * added new setting to change the text of the Read More button
 * improved styling of checkbox labels in comment form
