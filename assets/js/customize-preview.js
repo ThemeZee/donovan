@@ -108,17 +108,6 @@
 		} );
 	} );
 
-	// Single Post Layout.
-	wp.customize( 'donovan_theme_options[post_layout]', function( value ) {
-		value.bind( function( newval ) {
-			if ( 'full' === newval ) {
-				$( 'body' ).addClass( 'fullwidth-single-post' );
-			} else {
-				$( 'body' ).removeClass( 'fullwidth-single-post' );
-			}
-		} );
-	} );
-
 	// Post Date checkbox.
 	wp.customize( 'donovan_theme_options[meta_date]', function( value ) {
 		value.bind( function( newval ) {
