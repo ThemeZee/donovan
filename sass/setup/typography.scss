@@ -65,12 +65,11 @@ address {
 
 pre {
 	overflow: auto;
-	margin-bottom: 1.6em;
-	padding: 1.6em;
+	margin-bottom: 1.5em;
+	padding: 1.5em;
 	max-width: 100%;
 	border: 1px solid rgba(0,0,0,0.075);
-	font-size: 15px;
-	font-size: 0.9375rem;
+	@include font-size(15);
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	line-height: 1.6;
 }
