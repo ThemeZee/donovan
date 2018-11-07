@@ -1,6 +1,6 @@
 /* Text Colors */
 .has-primary-color {
-	color: #ee3333;
+	@include color(--link-color);
 }
 
 .has-white-color {
@@ -8,20 +8,20 @@
 }
 
 .has-light-gray-color {
-	color: #f0f0f0;
+	color: #f2f2f2;
 }
 
 .has-dark-gray-color {
-	color: #777777;
+	color: #666666;
 }
 
 .has-black-color {
-	color: #303030;
+	color: #202020;
 }
 
 /* Background Colors */
 .has-primary-background-color {
-	background-color: #ee3333;
+	@include background(--link-color);
 }
 
 .has-white-background-color {
@@ -29,13 +29,13 @@
 }
 
 .has-light-gray-background-color {
-	background-color: #f0f0f0;
+	background-color: #f2f2f2;
 }
 
 .has-dark-gray-background-color {
-	background-color: #777777;
+	background-color: #666666;
 }
 
 .has-black-background-color {
-	background-color: #303030;
+	background-color: #202020;
 }

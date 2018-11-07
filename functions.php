@@ -86,7 +86,7 @@ if ( ! function_exists( 'donovan_setup' ) ) :
 			array(
 				'name'  => esc_html_x( 'Primary', 'Gutenberg Color Palette', 'donovan' ),
 				'slug'  => 'primary',
-				'color' => apply_filters( 'donovan_primary_color', '#ee3333' ),
+				'color' => apply_filters( 'donovan_primary_color', '#ee1133' ),
 			),
 			array(
 				'name'  => esc_html_x( 'White', 'Gutenberg Color Palette', 'donovan' ),
@@ -96,17 +96,17 @@ if ( ! function_exists( 'donovan_setup' ) ) :
 			array(
 				'name'  => esc_html_x( 'Light Gray', 'Gutenberg Color Palette', 'donovan' ),
 				'slug'  => 'light-gray',
-				'color' => '#f0f0f0',
+				'color' => '#f2f2f2',
 			),
 			array(
 				'name'  => esc_html_x( 'Dark Gray', 'Gutenberg Color Palette', 'donovan' ),
 				'slug'  => 'dark-gray',
-				'color' => '#777777',
+				'color' => '#666666',
 			),
 			array(
 				'name'  => esc_html_x( 'Black', 'Gutenberg Color Palette', 'donovan' ),
 				'slug'  => 'black',
-				'color' => '#303030',
+				'color' => '#202020',
 			),
 		) );
 	}

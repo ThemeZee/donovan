@@ -26,6 +26,11 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.3 =
+* added styling for Gutenberg blocks
+* added custom color palette for Gutenberg
+* added editor styling for WordPress 5.0
+
 = 1.2.1 =
 * fixed broken layout for aligned images with captions
 
