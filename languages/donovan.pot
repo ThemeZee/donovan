@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Donovan\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2018-06-09 13:05+0200\n"
+"POT-Creation-Date: 2018-11-07 19:59+0100\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.3\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -56,17 +56,42 @@ msgstr ""
 msgid "Social Icons"
 msgstr ""
 
-#: functions.php:108
+#: functions.php:87
+msgctxt "Gutenberg Color Palette"
+msgid "Primary"
+msgstr ""
+
+#: functions.php:92
+msgctxt "Gutenberg Color Palette"
+msgid "White"
+msgstr ""
+
+#: functions.php:97
+msgctxt "Gutenberg Color Palette"
+msgid "Light Gray"
+msgstr ""
+
+#: functions.php:102
+msgctxt "Gutenberg Color Palette"
+msgid "Dark Gray"
+msgstr ""
+
+#: functions.php:107
+msgctxt "Gutenberg Color Palette"
+msgid "Black"
+msgstr ""
+
+#: functions.php:137
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:139
 msgctxt "widget area description"
 msgid ""
 "Sidebar will appear on posts and pages, except with the full width template."
 msgstr ""
 
-#: functions.php:136
+#: functions.php:165
 msgid "Menu"
 msgstr ""
 
