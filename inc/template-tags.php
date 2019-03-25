@@ -51,11 +51,12 @@ if ( ! function_exists( 'donovan_site_description' ) ) :
 
 		$description = get_bloginfo( 'description', 'display' ); /* WPCS: xss ok. */
 
-		if ( $description || is_customize_preview() ) : ?>
+		if ( $description || is_customize_preview() ) :
+			?>
 
 			<p class="site-description"><?php echo $description; ?></p>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -67,7 +68,8 @@ if ( ! function_exists( 'donovan_header_image' ) ) :
 	 */
 	function donovan_header_image() {
 
-		if ( has_header_image() ) : ?>
+		if ( has_header_image() ) :
+			?>
 
 			<div id="headimg" class="header-image">
 
@@ -77,7 +79,7 @@ if ( ! function_exists( 'donovan_header_image' ) ) :
 
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -90,23 +92,28 @@ if ( ! function_exists( 'donovan_blog_title' ) ) :
 	function donovan_blog_title() {
 
 		// Get blog title and descripton from database.
-		$blog_title = donovan_get_option( 'blog_title' );
+		$blog_title       = donovan_get_option( 'blog_title' );
 		$blog_description = donovan_get_option( 'blog_description' );
 
 		// Display Blog Title.
-		if ( '' !== $blog_title || '' !== $blog_description || is_customize_preview() ) : ?>
+		if ( '' !== $blog_title || '' !== $blog_description || is_customize_preview() ) :
+			?>
 
 			<header class="archive-header blog-header clearfix">
 
-				<?php // Display Blog Title.
-				if ( '' !== $blog_title || is_customize_preview() ) : ?>
+				<?php
+				// Display Blog Title.
+				if ( '' !== $blog_title || is_customize_preview() ) :
+					?>
 
 					<h3 class="archive-title blog-title"><?php echo wp_kses_post( $blog_title ); ?></h3>
 
-				<?php endif;
+					<?php
+				endif;
 
 				// Display Blog Description.
-				if ( '' !== $blog_description || is_customize_preview() ) : ?>
+				if ( '' !== $blog_description || is_customize_preview() ) :
+					?>
 
 					<p class="blog-description"><?php echo wp_kses_post( $blog_description ); ?></p>
 
@@ -114,7 +121,8 @@ if ( ! function_exists( 'donovan_blog_title' ) ) :
 
 			</header>
 
-		<?php endif;
+			<?php
+		endif;
 	}
 endif;
 
@@ -129,7 +137,8 @@ if ( ! function_exists( 'donovan_post_image_archives' ) ) :
 		$image_size = ( 'list' === donovan_get_option( 'blog_layout' ) ) ? 'donovan-list-post' : 'post-thumbnail';
 
 		// Display Post Thumbnail if activated.
-		if ( true === donovan_get_option( 'post_image_archives' ) && has_post_thumbnail() ) : ?>
+		if ( true === donovan_get_option( 'post_image_archives' ) && has_post_thumbnail() ) :
+			?>
 
 			<div class="post-image">
 				<a class="wp-post-image-link" href="<?php the_permalink(); ?>" rel="bookmark">
@@ -137,7 +146,7 @@ if ( ! function_exists( 'donovan_post_image_archives' ) ) :
 				</a>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -150,13 +159,14 @@ if ( ! function_exists( 'donovan_post_image_single' ) ) :
 	function donovan_post_image_single() {
 
 		// Display Post Thumbnail if activated.
-		if ( true === donovan_get_option( 'post_image_single' ) ) : ?>
+		if ( true === donovan_get_option( 'post_image_single' ) ) :
+			?>
 
 			<div class="post-image">
 				<?php the_post_thumbnail(); ?>
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -237,7 +247,7 @@ if ( ! function_exists( 'donovan_entry_footer' ) ) :
 		// Display categories.
 		echo donovan_entry_categories();
 
-		if( is_singular() ) {
+		if ( is_singular() ) {
 			// Display Tags only on single posts.
 			donovan_entry_tags();
 		} else {
@@ -276,14 +286,15 @@ if ( ! function_exists( 'donovan_entry_tags' ) ) :
 		$tag_list = get_the_tag_list( '', ', ' );
 
 		// Display tags.
-		if ( $tag_list ) : ?>
+		if ( $tag_list ) :
+			?>
 
 			<div class="entry-tags clearfix">
 				<?php echo donovan_get_svg( 'tag' ); ?>
 				<?php echo $tag_list; ?>
 			</div><!-- .entry-tags -->
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -296,7 +307,8 @@ if ( ! function_exists( 'donovan_entry_comments' ) ) :
 	function donovan_entry_comments() {
 
 		// Check if comments are open or we have at least one comment.
-		if ( comments_open() || get_comments_number() ) : ?>
+		if ( comments_open() || get_comments_number() ) :
+			?>
 
 			<div class="entry-comments">
 
@@ -312,7 +324,7 @@ if ( ! function_exists( 'donovan_entry_comments' ) ) :
 
 			</div>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -328,11 +340,11 @@ if ( ! function_exists( 'donovan_more_link' ) ) :
 		$read_more = donovan_get_option( 'read_more_text' );
 
 		if ( '' !== $read_more || is_customize_preview() ) :
-		?>
+			?>
 
-			<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link"><?php echo esc_html( $read_more ); ?></a>
+			<a href="<?php echo esc_url( get_permalink() ); ?>" class="more-link"><?php echo esc_html( $read_more ); ?></a>
 
-		<?php
+			<?php
 		endif;
 	}
 endif;
@@ -366,7 +378,7 @@ if ( ! function_exists( 'donovan_breadcrumbs' ) ) :
 
 			themezee_breadcrumbs( array(
 				'before' => '<div class="breadcrumbs-container container clearfix">',
-				'after' => '</div>',
+				'after'  => '</div>',
 			) );
 
 		}
@@ -383,9 +395,9 @@ if ( ! function_exists( 'donovan_related_posts' ) ) :
 		if ( function_exists( 'themezee_related_posts' ) ) {
 
 			themezee_related_posts( array(
-				'class' => 'related-posts type-page',
+				'class'        => 'related-posts type-page',
 				'before_title' => '<h2 class="archive-title related-posts-title">',
-				'after_title' => '</h2>',
+				'after_title'  => '</h2>',
 			) );
 
 		}
@@ -416,10 +428,12 @@ function donovan_credit_link() {
 	?>
 
 	<span class="credit-link">
-		<?php printf( esc_html__( 'Powered by %1$s and %2$s.', 'donovan' ),
-			'<a href="' . esc_url( __( 'http://wordpress.org', 'donovan' ) ) . '" title="WordPress">WordPress</a>',
+		<?php
+		// translators: Theme Name
+		printf( esc_html__( 'WordPress Theme: %s by ThemeZee.', 'donovan' ),
 			'<a href="https://themezee.com/themes/donovan/" title="Donovan WordPress Theme">Donovan</a>'
-		); ?>
+		);
+		?>
 	</span>
 
 	<?php
