@@ -209,6 +209,18 @@ add_action( 'after_setup_theme', 'donovan_add_image_sizes' );
 
 
 /**
+ * Make custom image sizes available in Gutenberg.
+ */
+function donovan_add_image_size_names( $sizes ) {
+	return array_merge( $sizes, array(
+		'post-thumbnail'    => esc_html__( 'Donovan Single Post', 'donovan' ),
+		'donovan-list-post' => esc_html__( 'Donovan List Post', 'donovan' ),
+	) );
+}
+add_filter( 'image_size_names_choose', 'donovan_add_image_size_names' );
+
+
+/**
  * Add pingback url on single posts
  */
 function donovan_pingback_url() {
