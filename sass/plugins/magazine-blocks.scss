@@ -1,0 +1,24 @@
+/* Styling for ThemeZee Magazine Blocks */
+.tz-post-wrap .tz-magazine-post {
+	margin: 0 0 1.5rem;
+	padding: 0;
+}
+
+.tz-magazine-post .entry-title {
+	@include font-size(22);
+}
+
+@media only screen and (min-width: 80em) {
+	.tz-magazine-columns-2,
+	.tz-magazine-columns-3 {
+		.tz-magazine-post .entry-title {
+			@include font-size(24);
+		}
+	}
+}
+
+@media only screen and (min-width: 90em) {
+	.tz-magazine-post .entry-content {
+		@include font-size(17);
+	}
+}

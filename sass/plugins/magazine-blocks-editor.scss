@@ -1,0 +1,87 @@
+/* Styling for ThemeZee Magazine Blocks */
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post {
+	
+	.entry-image {
+		margin-bottom: 0.5em;
+	}
+
+	.entry-title {
+		margin-top: 0;
+		margin-bottom: 0.2em;
+		padding: 0;
+		@include color(--title-color);
+		@include font-size(22);
+		@include font-family(--title-font);
+		font-weight: normal;
+		line-height: 1.4;
+	}
+
+	.entry-title a:link,
+	.entry-title a:visited {
+		@include color(--title-color);
+		text-decoration: none;
+	}
+	
+	.entry-title a:hover,
+	.entry-title a:active {
+		text-decoration: underline;
+	}
+
+	.entry-meta {
+		margin: 0.5em 0;
+		color: rgba(0,0,0,0.5);
+		@include font-size(15);
+	}
+
+	.entry-meta a:link,
+	.entry-meta a:visited {
+		color: rgba(0,0,0,0.5);
+		border-bottom: 1px dotted rgba(0,0,0,0.15);
+		text-decoration: none;
+	}
+
+	.entry-meta a:hover,
+	.entry-meta a:active {
+		color: $textColor;
+		text-decoration: none;
+	}
+
+	.entry-content {
+		margin-top: 1em;
+	}
+
+	.more-link {
+		display: inline-block;
+		margin: 0;
+		padding: 0.5em 1em;
+		@include color(--button-text-color);
+		@include background(--button-color);
+		@include font-size(15);
+	}
+	
+	.more-link:link,
+	.more-link:visited  {
+		@include color(--button-text-color);
+		text-decoration: none;
+	}
+	
+	.more-link:hover,
+	.more-link:active {
+		@include color(--button-hover-text-color);
+		@include background(--button-hover-color);
+		text-decoration: none;
+	}	
+}
+
+@media only screen and (min-width: 80em) {
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title {
+		@include font-size(24);
+	}
+}
+
+@media only screen and (min-width: 90em) {
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content,
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content p {
+		@include font-size(17);
+	}
+}

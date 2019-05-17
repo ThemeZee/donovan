@@ -15,6 +15,7 @@
 4.0 - Blocks
 5.0 - Colors
 6.0 - Media Queries
+7.0 - Media Queries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -266,3 +267,8 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 		@include font-size(36);
 	}
 }
+
+/*--------------------------------------------------------------
+# - 7.0 Plugins
+--------------------------------------------------------------*/
+@import 'plugins/magazine-blocks-editor';

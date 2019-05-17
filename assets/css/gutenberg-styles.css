@@ -15,6 +15,7 @@
 4.0 - Blocks
 5.0 - Colors
 6.0 - Media Queries
+7.0 - Media Queries
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -43,6 +44,7 @@
 	--title-font: Quicksand, Tahoma, Arial;
 	--navi-font: Quicksand, Tahoma, Arial;
 	--widget-title-font: Quicksand, Tahoma, Arial;
+	--tz-column-gap: 1.5rem;
 }
 
 /*--------------------------------------------------------------
@@ -352,5 +354,107 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 	.edit-post-visual-editor .editor-post-title__block .editor-post-title__input {
 		font-size: 36px;
 		font-size: 2.25rem;
+	}
+}
+
+/*--------------------------------------------------------------
+# - 7.0 Plugins
+--------------------------------------------------------------*/
+
+/* Styling for ThemeZee Magazine Blocks */
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-image {
+	margin-bottom: 0.5em;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title {
+	margin-top: 0;
+	margin-bottom: 0.2em;
+	padding: 0;
+	color: #202020;
+	color: var(--title-color);
+	font-size: 22px;
+	font-size: 1.375rem;
+	font-family: Quicksand, Tahoma, Arial;
+	font-family: var(--title-font);
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title a:link,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title a:visited {
+	color: #202020;
+	color: var(--title-color);
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title a:hover,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title a:active {
+	text-decoration: underline;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-meta {
+	margin: 0.5em 0;
+	color: rgba(0, 0, 0, 0.5);
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-meta a:link,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-meta a:visited {
+	color: rgba(0, 0, 0, 0.5);
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-meta a:hover,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-meta a:active {
+	color: #202020;
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content {
+	margin-top: 1em;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .more-link {
+	display: inline-block;
+	margin: 0;
+	padding: 0.5em 1em;
+	color: #fff;
+	color: var(--button-text-color);
+	background-color: #ee1133;
+	background-color: var(--button-color);
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .more-link:link,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .more-link:visited {
+	color: #fff;
+	color: var(--button-text-color);
+	text-decoration: none;
+}
+
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .more-link:hover,
+.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .more-link:active {
+	color: #fff;
+	color: var(--button-hover-text-color);
+	background-color: #D5001A;
+	background-color: var(--button-hover-color);
+	text-decoration: none;
+}
+
+@media only screen and (min-width: 80em) {
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title {
+		font-size: 24px;
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 90em) {
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content,
+	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content p {
+		font-size: 17px;
+		font-size: 1.0625rem;
 	}
 }
