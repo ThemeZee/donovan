@@ -425,16 +425,19 @@ endif;
  * Displays credit link on footer line
  */
 function donovan_credit_link() {
-	?>
-
-	<span class="credit-link">
-		<?php
-		// translators: Theme Name
-		printf( esc_html__( 'WordPress Theme: %s by ThemeZee.', 'donovan' ),
-			'<a href="https://themezee.com/themes/donovan/" title="Donovan WordPress Theme">Donovan</a>'
-		);
+	if ( true === donovan_get_option( 'credit_link' ) || is_customize_preview() ) :
 		?>
-	</span>
 
-	<?php
+		<span class="credit-link">
+			<?php
+			// translators: Theme Name and Link to ThemeZee.
+			printf( esc_html__( 'WordPress Theme: %1$s by %2$s.', 'donovan' ),
+				esc_html__( 'Donovan', 'donovan' ),
+				'<a href="https://themezee.com/" target="_blank" rel="nofollow">ThemeZee</a>'
+			);
+			?>
+		</span>
+
+		<?php
+	endif;
 }

@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.3.3 =
+* improved implementation of footer credit link
+
 = 1.3.2 =
 * added support for responsive embed blocks
 
