@@ -1,56 +1,74 @@
 /* Styling for ThemeZee Magazine Blocks */
-.edit-post-visual-editor .editor-block-list__block .tz-magazine-post {
+.edit-post-visual-editor .tz-magazine-block {
 	
-	.entry-image {
+	.tz-entry-image {
 		margin-bottom: 0.5em;
 	}
 
-	.entry-title {
+	.tz-entry-title {
 		margin-top: 0;
 		margin-bottom: 0.2em;
 		padding: 0;
 		@include color(--title-color);
-		@include font-size(22);
+		@include font-size(24);
 		@include font-family(--title-font);
 		font-weight: normal;
 		line-height: 1.4;
 	}
 
-	.entry-title a:link,
-	.entry-title a:visited {
+	.tz-entry-title a:link,
+	.tz-entry-title a:visited {
 		@include color(--title-color);
 		text-decoration: none;
 	}
 	
-	.entry-title a:hover,
-	.entry-title a:active {
+	.tz-entry-title a:hover,
+	.tz-entry-title a:active {
 		text-decoration: underline;
 	}
 
-	.entry-meta {
+	.tz-magazine-grid-columns-3 .tz-entry-title {
+		@include font-size(20);
+	}
+	
+	.tz-magazine-grid-columns-4 .tz-entry-title,
+	.tz-magazine-thumbnail-list .tz-entry-title {
+		@include font-size(18);
+	}
+
+	.tz-entry-meta {
 		margin: 0.5em 0;
 		color: rgba(0,0,0,0.5);
 		@include font-size(15);
 	}
 
-	.entry-meta a:link,
-	.entry-meta a:visited {
+	.tz-entry-meta .tz-meta-field {
+		margin-right: 1rem;
+	}	
+
+	.tz-entry-meta a:link,
+	.tz-entry-meta a:visited {
 		color: rgba(0,0,0,0.5);
 		border-bottom: 1px dotted rgba(0,0,0,0.15);
 		text-decoration: none;
 	}
 
-	.entry-meta a:hover,
-	.entry-meta a:active {
+	.tz-entry-meta a:hover,
+	.tz-entry-meta a:active {
 		color: $textColor;
 		text-decoration: none;
 	}
 
-	.entry-content {
+	.tz-entry-content {
 		margin-top: 1em;
+		@include font-size(17);
+
+		p {
+			@include font-size(17);
+		} 
 	}
 
-	.more-link {
+	.tz-more-link {
 		display: inline-block;
 		margin: 0;
 		padding: 0.5em 1em;
@@ -59,29 +77,16 @@
 		@include font-size(15);
 	}
 	
-	.more-link:link,
-	.more-link:visited  {
+	.tz-more-link:link,
+	.tz-more-link:visited  {
 		@include color(--button-text-color);
 		text-decoration: none;
 	}
 	
-	.more-link:hover,
-	.more-link:active {
+	.tz-more-link:hover,
+	.tz-more-link:active {
 		@include color(--button-hover-text-color);
 		@include background(--button-hover-color);
 		text-decoration: none;
 	}	
-}
-
-@media only screen and (min-width: 80em) {
-	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-title {
-		@include font-size(24);
-	}
-}
-
-@media only screen and (min-width: 90em) {
-	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content,
-	.edit-post-visual-editor .editor-block-list__block .tz-magazine-post .entry-content p {
-		@include font-size(17);
-	}
 }

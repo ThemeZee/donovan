@@ -1,24 +1,34 @@
 /* Styling for ThemeZee Magazine Blocks */
-.tz-post-wrap .tz-magazine-post {
+:root {
+	--tz-column-gap: 1.5rem;
+}
+
+.tz-magazine-block .tz-magazine-post {
 	margin: 0 0 1.5rem;
 	padding: 0;
 }
 
-.tz-magazine-post .entry-title {
-	@include font-size(22);
+.tz-magazine-block .tz-entry-title {
+	@include font-size(24);
 }
 
-@media only screen and (min-width: 80em) {
-	.tz-magazine-columns-2,
-	.tz-magazine-columns-3 {
-		.tz-magazine-post .entry-title {
-			@include font-size(24);
-		}
-	}
+.tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
+	@include font-size(20);
 }
 
-@media only screen and (min-width: 90em) {
-	.tz-magazine-post .entry-content {
-		@include font-size(17);
-	}
+.tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
+.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
+	@include font-size(18);
+}
+
+.tz-magazine-block .tz-entry-meta {
+	@include font-size(15);
+}
+
+.tz-magazine-block .tz-meta-field {
+	margin-right: 1em;
+}
+
+.tz-magazine-block .tz-entry-content {
+	@include font-size(17);
 }

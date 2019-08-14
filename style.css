@@ -2017,29 +2017,43 @@ object {
 }
 
 /* Styling for ThemeZee Magazine Blocks */
-.tz-post-wrap .tz-magazine-post {
+:root {
+	--tz-column-gap: 1.5rem;
+}
+
+.tz-magazine-block .tz-magazine-post {
 	margin: 0 0 1.5rem;
 	padding: 0;
 }
 
-.tz-magazine-post .entry-title {
-	font-size: 22px;
-	font-size: 1.375rem;
+.tz-magazine-block .tz-entry-title {
+	font-size: 24px;
+	font-size: 1.5rem;
 }
 
-@media only screen and (min-width: 80em) {
-	.tz-magazine-columns-2 .tz-magazine-post .entry-title,
-	.tz-magazine-columns-3 .tz-magazine-post .entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
-	}
+.tz-magazine-block .tz-magazine-grid-columns-3 .tz-entry-title {
+	font-size: 20px;
+	font-size: 1.25rem;
 }
 
-@media only screen and (min-width: 90em) {
-	.tz-magazine-post .entry-content {
-		font-size: 17px;
-		font-size: 1.0625rem;
-	}
+.tz-magazine-block .tz-magazine-grid-columns-4 .tz-entry-title,
+.tz-magazine-block .tz-magazine-thumbnail-list .tz-entry-title {
+	font-size: 18px;
+	font-size: 1.125rem;
+}
+
+.tz-magazine-block .tz-entry-meta {
+	font-size: 15px;
+	font-size: 0.9375rem;
+}
+
+.tz-magazine-block .tz-meta-field {
+	margin-right: 1em;
+}
+
+.tz-magazine-block .tz-entry-content {
+	font-size: 17px;
+	font-size: 1.0625rem;
 }
 
 /* Styling for ThemeZee Related Posts Plugin */
