@@ -1288,7 +1288,7 @@ body.tags-hidden .type-post .entry-footer .entry-tags {
 	height: 1px;
 }
 
-body.date-hidden.author-hidden .content-area .entry-meta {
+body.date-hidden.author-hidden .content-area .type-post .entry-meta {
 	display: none;
 }
 
@@ -2054,20 +2054,6 @@ object {
 .tz-magazine-block .tz-entry-content {
 	font-size: 17px;
 	font-size: 1.0625rem;
-}
-
-/* Deactivate post meta theme settings for Magazine blocks */
-body.date-hidden.author-hidden .content-area .tz-magazine-block .tz-entry-meta {
-	display: block;
-}
-
-body.date-hidden .tz-magazine-block .type-post .tz-entry-meta .tz-meta-date,
-body.author-hidden .tz-magazine-block .type-post .tz-entry-meta .tz-meta-author {
-	position: static;
-	overflow: visible;
-	clip: auto;
-	width: auto;
-	height: auto;
 }
 
 /* Styling for ThemeZee Related Posts Plugin */
