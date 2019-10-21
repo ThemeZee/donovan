@@ -10,7 +10,10 @@
 	margin-bottom: 4px;
 }
 
-#customize-control-donovan_theme_options-site_description {
+#customize-control-donovan_theme_options-site_description,
+#customize-control-donovan_theme_options-theme_links,
+#customize-control-donovan_theme_options-pro_version,
+#customize-control-donovan_theme_options-magazine_blocks {
 	margin-bottom: 16px;
 }
 
@@ -37,8 +40,4 @@
 
 #customize-control-donovan_theme_options-blog_description textarea {
 	height: 4em;
-}
-
-#customize-control-donovan_theme_options-pro_version div {
-	margin: 4px 0 16px;
 }
