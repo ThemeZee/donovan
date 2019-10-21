@@ -31,16 +31,15 @@ function donovan_customize_register_options( $wp_customize ) {
 		'capability'     => 'edit_theme_options',
 		'theme_supports' => '',
 		'title'          => esc_html__( 'Theme Options', 'donovan' ),
-		'description'    => donovan_customize_theme_links(),
 	) );
 
 	// Change default background section.
-	$wp_customize->get_control( 'background_color' )->section   = 'background_image';
-	$wp_customize->get_section( 'background_image' )->title     = esc_html__( 'Background', 'donovan' );
+	$wp_customize->get_control( 'background_color' )->section = 'background_image';
+	$wp_customize->get_section( 'background_image' )->title   = esc_html__( 'Background', 'donovan' );
 
 	// Add postMessage support for site title and description.
-	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
+	$wp_customize->get_setting( 'blogname' )->transport        = 'postMessage';
+	$wp_customize->get_setting( 'blogdescription' )->transport = 'postMessage';
 
 	// Add selective refresh for site title and description.
 	$wp_customize->selective_refresh->add_partial( 'blogname', array(
@@ -128,48 +127,3 @@ function donovan_customizer_controls_css() {
 	wp_enqueue_style( 'donovan-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20180609' );
 }
 add_action( 'customize_controls_print_styles', 'donovan_customizer_controls_css' );
-
-/**
- * Returns Theme Links
- */
-function donovan_customize_theme_links() {
-
-	ob_start();
-	?>
-
-		<div class="theme-links">
-
-			<span class="customize-control-title"><?php esc_html_e( 'Theme Links', 'donovan' ); ?></span>
-
-			<p>
-				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/donovan/', 'donovan' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=donovan&utm_content=theme-page" target="_blank">
-					<?php esc_html_e( 'Theme Page', 'donovan' ); ?>
-				</a>
-			</p>
-
-			<p>
-				<a href="http://preview.themezee.com/?demo=donovan&utm_source=customizer&utm_campaign=donovan" target="_blank">
-					<?php esc_html_e( 'Theme Demo', 'donovan' ); ?>
-				</a>
-			</p>
-
-			<p>
-				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/donovan-documentation/', 'donovan' ) ); ?>?utm_source=customizer&utm_medium=textlink&utm_campaign=donovan&utm_content=documentation" target="_blank">
-					<?php esc_html_e( 'Theme Documentation', 'donovan' ); ?>
-				</a>
-			</p>
-
-			<p>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) ); ?>" target="_blank">
-					<?php esc_html_e( 'Rate this theme', 'donovan' ); ?>
-				</a>
-			</p>
-
-		</div>
-
-	<?php
-	$theme_links = ob_get_contents();
-	ob_end_clean();
-
-	return $theme_links;
-}
