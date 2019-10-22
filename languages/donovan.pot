@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Donovan\n"
 "Report-Msgid-Bugs-To: https://themezee.com/\n"
-"POT-Creation-Date: 2019-03-25 11:39+0100\n"
+"POT-Creation-Date: 2019-10-22 08:27+0200\n"
 "PO-Revision-Date: 2016-09-15 21:02+0100\n"
 "Last-Translator: \n"
 "Language-Team: ThemeZee <support@themezee.com>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.1\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
 "_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
 "esc_html_x:1,2c\n"
@@ -81,18 +81,26 @@ msgctxt "Gutenberg Color Palette"
 msgid "Black"
 msgstr ""
 
-#: functions.php:137
+#: functions.php:140
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:139
+#: functions.php:142
 msgctxt "widget area description"
 msgid ""
 "Sidebar will appear on posts and pages, except with the full width template."
 msgstr ""
 
-#: functions.php:165
+#: functions.php:168
 msgid "Menu"
+msgstr ""
+
+#: functions.php:216
+msgid "Donovan Single Post"
+msgstr ""
+
+#: functions.php:217
+msgid "Donovan List Post"
 msgstr ""
 
 #: header.php:24
@@ -104,6 +112,54 @@ msgstr ""
 msgid ""
 "%1$s requires at least WordPress version %2$s. You are running version %3$s. "
 "Please upgrade and try again."
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:25 inc/theme-info.php:46
+msgid "Theme Links"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:28 inc/theme-info.php:47
+msgid "https://themezee.com/themes/donovan/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:29 inc/theme-info.php:47
+msgid "Theme Page"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:35 inc/theme-info.php:48
+msgid "Theme Demo"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:40 inc/theme-info.php:49
+#: inc/theme-info.php:70
+msgid "https://themezee.com/docs/donovan-documentation/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:41 inc/theme-info.php:49
+#: inc/theme-info.php:64
+msgid "Theme Documentation"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:46
+msgid "https://wordpress.org/support/theme/donovan/"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:47
+msgid "Support Forum"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:52 inc/theme-info.php:50
+#: inc/theme-info.php:153
+msgid "https://wordpress.org/support/theme/donovan/reviews/?filter=5"
+msgstr ""
+
+#: inc/customizer/controls/links-control.php:53 inc/theme-info.php:50
+#: inc/theme-info.php:153
+msgid "Rate this theme"
+msgstr ""
+
+#: inc/customizer/controls/plugin-control.php:33
+msgid "Install Plugin"
 msgstr ""
 
 #: inc/customizer/controls/upgrade-control.php:25 inc/theme-info.php:110
@@ -126,70 +182,20 @@ msgstr ""
 msgid "Learn more about %s Pro"
 msgstr ""
 
-#: inc/customizer/controls/upgrade-control.php:41 inc/theme-info.php:127
-msgid "Recommended Plugins"
-msgstr ""
-
-#: inc/customizer/controls/upgrade-control.php:44 inc/theme-info.php:130
-msgid ""
-"Extend the functionality of your WordPress website with our free and easy to "
-"use plugins."
-msgstr ""
-
-#: inc/customizer/controls/upgrade-control.php:49 inc/theme-info.php:134
-msgid "Install Plugins"
-msgstr ""
-
-#: inc/customizer/customizer.php:33 inc/theme-info.php:77
+#: inc/customizer/customizer.php:35 inc/theme-info.php:77
 msgid "Theme Options"
 msgstr ""
 
-#: inc/customizer/customizer.php:39
+#: inc/customizer/customizer.php:40
 msgid "Background"
 msgstr ""
 
-#: inc/customizer/customizer.php:64
+#: inc/customizer/customizer.php:65
 msgid "Display Site Title"
 msgstr ""
 
-#: inc/customizer/customizer.php:80
+#: inc/customizer/customizer.php:81
 msgid "Display Tagline"
-msgstr ""
-
-#: inc/customizer/customizer.php:142 inc/theme-info.php:46
-msgid "Theme Links"
-msgstr ""
-
-#: inc/customizer/customizer.php:145 inc/theme-info.php:47
-msgid "https://themezee.com/themes/donovan/"
-msgstr ""
-
-#: inc/customizer/customizer.php:146 inc/theme-info.php:47
-msgid "Theme Page"
-msgstr ""
-
-#: inc/customizer/customizer.php:152 inc/theme-info.php:48
-msgid "Theme Demo"
-msgstr ""
-
-#: inc/customizer/customizer.php:157 inc/theme-info.php:49
-#: inc/theme-info.php:70
-msgid "https://themezee.com/docs/donovan-documentation/"
-msgstr ""
-
-#: inc/customizer/customizer.php:158 inc/theme-info.php:49
-#: inc/theme-info.php:64
-msgid "Theme Documentation"
-msgstr ""
-
-#: inc/customizer/customizer.php:163 inc/theme-info.php:50
-#: inc/theme-info.php:153
-msgid "https://wordpress.org/support/theme/donovan/reviews/?filter=5"
-msgstr ""
-
-#: inc/customizer/customizer.php:164 inc/theme-info.php:50
-#: inc/theme-info.php:153
-msgid "Rate this theme"
 msgstr ""
 
 #: inc/customizer/default-options.php:61
@@ -243,6 +249,20 @@ msgstr ""
 
 #: inc/customizer/sections/customizer-blog.php:146
 msgid "Read More Text"
+msgstr ""
+
+#: inc/customizer/sections/customizer-info.php:19 inc/theme-info.php:20
+msgid "Theme Info"
+msgstr ""
+
+#: inc/customizer/sections/customizer-info.php:48
+msgid "Magazine Blocks"
+msgstr ""
+
+#: inc/customizer/sections/customizer-info.php:49
+msgid ""
+"Install our free Magazine Blocks to create a magazine-styled homepage in the "
+"Editor with just a few clicks."
 msgstr ""
 
 #: inc/customizer/sections/customizer-layout.php:19
@@ -321,10 +341,6 @@ msgstr ""
 msgid "Display image on single posts"
 msgstr ""
 
-#: inc/customizer/sections/customizer-upgrade.php:19
-msgid "More Features"
-msgstr ""
-
 #: inc/template-tags.php:209
 #, php-format
 msgctxt "post date"
@@ -375,18 +391,18 @@ msgctxt "pagination"
 msgid "Next Posts"
 msgstr ""
 
-#: inc/template-tags.php:433
+#: inc/template-tags.php:434
 #, php-format
-msgid "WordPress Theme: %s by ThemeZee."
+msgid "WordPress Theme: %1$s by %2$s."
+msgstr ""
+
+#: inc/template-tags.php:435
+msgid "Donovan"
 msgstr ""
 
 #: inc/theme-info.php:19 inc/theme-info.php:40
 #, php-format
 msgid "Welcome to %1$s %2$s"
-msgstr ""
-
-#: inc/theme-info.php:20
-msgid "Theme Info"
 msgstr ""
 
 #: inc/theme-info.php:57
@@ -418,6 +434,20 @@ msgstr ""
 
 #: inc/theme-info.php:103
 msgid "Get more features"
+msgstr ""
+
+#: inc/theme-info.php:127
+msgid "Recommended Plugins"
+msgstr ""
+
+#: inc/theme-info.php:130
+msgid ""
+"Extend the functionality of your WordPress website with our free and easy to "
+"use plugins."
+msgstr ""
+
+#: inc/theme-info.php:134
+msgid "Install Plugins"
 msgstr ""
 
 #: inc/theme-info.php:150
