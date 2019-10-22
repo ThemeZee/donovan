@@ -43,13 +43,13 @@ if ( class_exists( 'WP_Customize_Control' ) ) :
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/', 'donovan' ) ); ?>" target="_blank">
-						<?php esc_html_e( 'Support Forum', 'donovan' ); ?>
+					<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=donovan/', 'donovan' ) ); ?>" target="_blank">
+						<?php esc_html_e( 'Theme Changelog', 'donovan' ); ?>
 					</a>
 				</p>
 
 				<p>
-					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) ); ?>" target="_blank">
+					<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/reviews/', 'donovan' ) ); ?>" target="_blank">
 						<?php esc_html_e( 'Rate this theme', 'donovan' ); ?>
 					</a>
 				</p>

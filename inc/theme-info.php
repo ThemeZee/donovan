@@ -47,7 +47,8 @@ function donovan_theme_info_page() {
 				<a href="<?php echo esc_url( __( 'https://themezee.com/themes/donovan/', 'donovan' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=donovan&utm_content=theme-page' ); ?>" target="_blank"><?php esc_html_e( 'Theme Page', 'donovan' ); ?></a>
 				<a href="http://preview.themezee.com/?demo=donovan&utm_source=theme-info&utm_campaign=donovan" target="_blank"><?php esc_html_e( 'Theme Demo', 'donovan' ); ?></a>
 				<a href="<?php echo esc_url( __( 'https://themezee.com/docs/donovan-documentation/', 'donovan' ) . '?utm_source=theme-info&utm_medium=textlink&utm_campaign=donovan&utm_content=documentation' ); ?>" target="_blank"><?php esc_html_e( 'Theme Documentation', 'donovan' ); ?></a>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'donovan' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://themezee.com/changelogs/?action=themezee-changelog&type=theme&slug=donovan', 'donovan' ) ); ?>" target="_blank"><?php esc_html_e( 'Theme Changelog', 'donovan' ); ?></a>
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/support/theme/donovan/reviews/', 'donovan' ) ); ?>" target="_blank"><?php esc_html_e( 'Rate this theme', 'donovan' ); ?></a>
 			</p>
 		</div>
 		<hr>
@@ -150,7 +151,7 @@ function donovan_theme_info_page() {
 				<?php printf( esc_html__( '%1$s is proudly brought to you by %2$s. If you like this theme, %3$s :)', 'donovan' ),
 					$theme->display( 'Name' ),
 					'<a target="_blank" href="' . __( 'https://themezee.com/', 'donovan' ) . '?utm_source=theme-info&utm_medium=footer&utm_campaign=donovan" title="ThemeZee">ThemeZee</a>',
-					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/donovan/reviews/?filter=5', 'donovan' ) . '" title="' . esc_attr__( 'Rate this theme', 'donovan' ) . '">' . esc_html_x( 'rate it', 'If you like this theme, rate it', 'donovan' ) . '</a>'); ?>
+					'<a target="_blank" href="' . __( 'https://wordpress.org/support/theme/donovan/reviews/', 'donovan' ) . '" title="' . esc_attr__( 'Rate this theme', 'donovan' ) . '">' . esc_html_x( 'rate it', 'If you like this theme, rate it', 'donovan' ) . '</a>'); ?>
 			</p>
 
 		</div>
