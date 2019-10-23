@@ -26,24 +26,22 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
-= 1.4.1 =
+= 1.4.1 - 2019-10-22 =
 * added improved Theme Info section to Customizer
 
-= 1.4 =
+= 1.4 - 2019-08-16 =
 * added custom styling for ThemeZee Magazine Blocks
 * added custom image sizes to select fields in Gutenberg Editor and Media Library
 * disabled post meta theme settings for Magazine blocks
 
-= 1.3.3 =
+= 1.3.2 - 2019-05-07 =
 * improved implementation of footer credit link
-
-= 1.3.2 =
 * added support for responsive embed blocks
 
-= 1.3.1 =
+= 1.3.1 - 2019-03-25 =
 * adjusted footer credit link with clearer wording
 
-= 1.3 =
+= 1.3 - 2018-11-07 =
 * added styling for Gutenberg blocks
 * added custom color palette for Gutenberg
 * added editor styling for WordPress 5.0
