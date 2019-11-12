@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.4.2 - 2019-11-12 =
+* added font display swap to default theme fonts
+
 = 1.4.1 - 2019-10-22 =
 * added improved Theme Info section to Customizer
 
