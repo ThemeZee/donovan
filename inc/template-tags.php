@@ -290,8 +290,7 @@ if ( ! function_exists( 'donovan_entry_tags' ) ) :
 			?>
 
 			<div class="entry-tags clearfix">
-				<?php echo donovan_get_svg( 'tag' ); ?>
-				<?php echo $tag_list; ?>
+				<?php echo donovan_get_svg( 'tag' ) . $tag_list; ?>
 			</div><!-- .entry-tags -->
 
 			<?php
