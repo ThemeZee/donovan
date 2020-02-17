@@ -26,6 +26,10 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.4.4 - 2020-02-17 =
+* added new wp_body_open tag
+* fixed spacing of tags on single posts
+
 = 1.4.3 - 2019-11-18 =
 * fixed styling of captions in Image and Gallery block
 * improved styling of Latest Posts and Table block
