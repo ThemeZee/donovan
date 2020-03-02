@@ -109,15 +109,15 @@ GNU General Public License for more details.
 
 == Ressources ==
 
-Donovan bundles the following third-party resources:
+Donovan uses and bundles the following third-party resources:
 
 1. Genericons Neue - https://github.com/Automattic/genericons-neue
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
 Copyright: 2017 Automattic, Inc., https://automattic.com/
 
-2. Social Icons Subset from Font Awesome - http://fontawesome.io/
-License: Distributed under the terms of the SIL OFL 1.1 (scripts.sil.org/OFL)
-Copyright: 2017 Dave Gandy, http://fontawesome.io/
+2. Font Awesome (for our social icons subset) - https://github.com/FortAwesome/Font-Awesome
+License: Distributed under the terms of the CC BY 4.0 License (https://creativecommons.org/licenses/by/4.0/)
+Copyright: Fonticons, Inc, https://fontawesome.com/
 
 3. Underscores - http://underscores.me/
 License: Distributed under the terms of the GPLv2 (https://www.gnu.org/licenses/gpl-2.0.html)
