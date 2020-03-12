@@ -4,7 +4,7 @@ Theme URI: https://themezee.com/themes/donovan/
 Contributors: themezee
 Tags: two-columns, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, one-column, left-sidebar, right-sidebar, three-columns
 Requires at least: 4.7
-Tested up to: 5.3
+Tested up to: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,6 +25,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 == Changelog ==
+
+= 1.4.5 - 2020-03-12 =
+* updated social icons and added support for Telegram and WhatsApp
 
 = 1.4.4 - 2020-02-17 =
 * added new wp_body_open tag
