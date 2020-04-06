@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.4.6 - 2020-04-06 =
+* improved Block Editor styling for WordPress 5.4
+
 = 1.4.5 - 2020-03-12 =
 * updated social icons and added support for Telegram and WhatsApp
 

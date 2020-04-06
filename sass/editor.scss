@@ -21,16 +21,15 @@
 /*--------------------------------------------------------------
 # 1.0 - Variables
 --------------------------------------------------------------*/
- @import '_mixins';
- @import '_variables';
- 
+@import '_mixins';
+@import '_variables';
+
 /*--------------------------------------------------------------
 # 2.0 - Editor
 --------------------------------------------------------------*/
 body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
-body.block-editor-page .edit-post-visual-editor .editor-default-block-appender,
-body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
-    max-width: 940px;
+.wp-block {
+	max-width: 940px;
 }
 
 .edit-post-visual-editor .editor-post-title__block .editor-post-title__input {
@@ -44,28 +43,28 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 /*--------------------------------------------------------------
 # 3.0 - Typography
 --------------------------------------------------------------*/
-.edit-post-visual-editor .editor-block-list__block {
+.editor-styles-wrapper > * {
 	color: $textColor;
 	@include font-size(15);
 	@include font-family(--text-font);
 	line-height: 1.75;
 }
 
-.edit-post-visual-editor .editor-block-list__block p {
+.editor-styles-wrapper .wp-block p {
 	font-size: 18px;
 	font-size: 1.125rem;
 	margin-bottom: 1.25em;
 }
 
-.edit-post-visual-editor .editor-block-list__block a {
+.editor-styles-wrapper a {
     @include color(--link-color);
 }
 
-.edit-post-visual-editor .editor-block-list__block .has-text-color a {
+.editor-styles-wrapper .has-text-color a {
     color: inherit;
 }
 
-.edit-post-visual-editor .editor-block-list__block pre {
+.editor-styles-wrapper pre {
 	overflow: auto;
 	padding: 1.5em;
 	border: 1px solid rgba(0,0,0,0.075);
@@ -74,38 +73,38 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 	line-height: 1.6;
 }
 
-.edit-post-visual-editor .editor-block-list__block h1,
-.edit-post-visual-editor .editor-block-list__block h2,
-.edit-post-visual-editor .editor-block-list__block h3,
-.edit-post-visual-editor .editor-block-list__block h4,
-.edit-post-visual-editor .editor-block-list__block h5,
-.edit-post-visual-editor .editor-block-list__block h6 {
+.editor-styles-wrapper .wp-block h1,
+.editor-styles-wrapper .wp-block h2,
+.editor-styles-wrapper .wp-block h3,
+.editor-styles-wrapper .wp-block h4,
+.editor-styles-wrapper .wp-block h5,
+.editor-styles-wrapper .wp-block h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
 	line-height: 1.4;
 }
 
-.edit-post-visual-editor .editor-block-list__block h1 {
+.editor-styles-wrapper .wp-block h1 {
 	@include font-size(32);
 }
 
-.edit-post-visual-editor .editor-block-list__block h2 {
+.editor-styles-wrapper .wp-block h2 {
 	@include font-size(26);
 }
 
-.edit-post-visual-editor .editor-block-list__block h3 {
+.editor-styles-wrapper .wp-block h3 {
 	@include font-size(22);
 }
 
-.edit-post-visual-editor .editor-block-list__block h4 {
+.editor-styles-wrapper .wp-block h4 {
 	@include font-size(20);
 }
 
-.edit-post-visual-editor .editor-block-list__block h5 {
+.editor-styles-wrapper .wp-block h5 {
 	@include font-size(19);
 }
 
-.edit-post-visual-editor .editor-block-list__block h6 {
+.editor-styles-wrapper .wp-block h6 {
 	@include font-size(18);
 }
 
@@ -197,7 +196,7 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 }
 
 /* Cover */
-.edit-post-visual-editor .editor-block-list__block p.wp-block-cover-text {
+.editor-styles-wrapper p.wp-block-cover-text {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-size: 2em;
@@ -208,7 +207,7 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 .wp-block-table td,
 .wp-block-table th {
 	padding: 0;
-    border: 1px solid rgba(0,0,0,0.075);
+    border: 1px solid rgba(0, 0, 0, 0.075);
 }
 
 .wp-block-table__cell-content {
@@ -241,8 +240,8 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 # 6.0 - Media Queries
 --------------------------------------------------------------*/
 @media only screen and (min-width: 20em) {
-	.edit-post-visual-editor .editor-block-list__block,
-	.edit-post-visual-editor .editor-block-list__block p {
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
 		@include font-size(16);
 	}
 
@@ -258,8 +257,8 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 }
 
 @media only screen and (min-width: 40em) {
-	.edit-post-visual-editor .editor-block-list__block,
-	.edit-post-visual-editor .editor-block-list__block p {
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
 		@include font-size(17);
 	}
 
@@ -275,11 +274,11 @@ body.block-editor-page .edit-post-visual-editor .editor-block-list__block {
 }
 
 @media only screen and (min-width: 90em) {
-	.edit-post-visual-editor .editor-block-list__block,
-	.edit-post-visual-editor .editor-block-list__block p {
+	.editor-styles-wrapper > *,
+	.editor-styles-wrapper .wp-block p {
 		@include font-size(18);
 	}
-	
+
 	.edit-post-visual-editor .editor-post-title__block .editor-post-title__input {
 		@include font-size(36);
 	}
