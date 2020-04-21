@@ -49,6 +49,7 @@ function donovan_theme_options() {
 function donovan_default_options() {
 
 	$default_options = array(
+		'retina_logo'         => false,
 		'site_title'          => true,
 		'site_description'    => true,
 		'theme_layout'        => 'wide',

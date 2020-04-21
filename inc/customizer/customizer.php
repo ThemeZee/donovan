@@ -47,7 +47,7 @@ add_action( 'customize_register', 'donovan_customize_register_options' );
  * Embed JS file to make Theme Customizer preview reload changes asynchronously.
  */
 function donovan_customize_preview_js() {
-	wp_enqueue_script( 'donovan-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20180609', true );
+	wp_enqueue_script( 'donovan-customize-preview', get_template_directory_uri() . '/assets/js/customize-preview.js', array( 'customize-preview' ), '20200410', true );
 }
 add_action( 'customize_preview_init', 'donovan_customize_preview_js' );
 
@@ -56,7 +56,7 @@ add_action( 'customize_preview_init', 'donovan_customize_preview_js' );
  * Embed JS for Customizer Controls.
  */
 function donovan_customizer_controls_js() {
-	wp_enqueue_script( 'donovan-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20180609', true );
+	wp_enqueue_script( 'donovan-customizer-controls', get_template_directory_uri() . '/assets/js/customizer-controls.js', array(), '20200410', true );
 }
 add_action( 'customize_controls_enqueue_scripts', 'donovan_customizer_controls_js' );
 
@@ -65,6 +65,6 @@ add_action( 'customize_controls_enqueue_scripts', 'donovan_customizer_controls_j
  * Embed CSS styles Customizer Controls.
  */
 function donovan_customizer_controls_css() {
-	wp_enqueue_style( 'donovan-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20180609' );
+	wp_enqueue_style( 'donovan-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20200410' );
 }
 add_action( 'customize_controls_print_styles', 'donovan_customizer_controls_css' );
