@@ -162,10 +162,15 @@ function donovan_scripts() {
 	wp_enqueue_style( 'donovan-stylesheet', get_stylesheet_uri(), array(), $theme_version );
 
 	// Register and enqueue navigation.js.
-	wp_enqueue_script( 'donovan-jquery-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array( 'jquery' ), '20171005' );
-
-	// Passing Parameters to navigation.js.
-	wp_localize_script( 'donovan-jquery-navigation', 'donovan_menu_title', donovan_get_svg( 'menu' ) . esc_html__( 'Menu', 'donovan' ) );
+	if ( has_nav_menu( 'primary' ) ) {
+		wp_enqueue_script( 'donovan-navigation', get_theme_file_uri( '/assets/js/navigation.js' ), array( 'jquery' ), '20191114', true );
+		$donovan_l10n = array(
+			'expand'   => esc_html__( 'Expand child menu', 'donovan' ),
+			'collapse' => esc_html__( 'Collapse child menu', 'donovan' ),
+			'icon'     => donovan_get_svg( 'expand' ),
+		);
+		wp_localize_script( 'donovan-navigation', 'donovanScreenReaderText', $donovan_l10n );
+	}
 
 	// Enqueue svgxuse to support external SVG Sprites in Internet Explorer.
 	wp_enqueue_script( 'svgxuse', get_theme_file_uri( '/assets/js/svgxuse.min.js' ), array(), '1.2.4' );
