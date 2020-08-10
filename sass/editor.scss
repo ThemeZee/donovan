@@ -234,7 +234,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 /*--------------------------------------------------------------
 # 5.0 - Colors
 --------------------------------------------------------------*/
-@import 'setup/colors';
+@import "5-blocks/colors";
 
 /*--------------------------------------------------------------
 # 6.0 - Media Queries
@@ -287,4 +287,4 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 /*--------------------------------------------------------------
 # - 7.0 Plugins
 --------------------------------------------------------------*/
-@import 'plugins/magazine-blocks-editor';
+@import '9-plugins/magazine-blocks-editor';

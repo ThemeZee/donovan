@@ -1,3 +1,58 @@
+.widget {
+	margin: 0;
+	padding: 1.5rem;
+	max-width: 100%;
+	word-wrap: break-word;
+	background: #fff;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.widget-title {
+	margin: 0 0 1rem;
+	padding: 0;
+	@include color(--widget-title-color);
+	@include font-size(18);
+	@include font-family(--widget-title-font);
+	font-weight: normal;
+	line-height: 1.4;
+}
+
+.widget a:link,
+.widget a:visited  {
+	text-decoration: none;
+}
+
+.widget a:hover,
+.widget a:active  {
+	text-decoration: underline;
+}
+
+.widget ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.widget ul li,
+.widget ol li {
+	padding: 0.2em 0;
+}
+
+.widget ul > li:last-child {
+	padding-bottom: 0;
+}
+
+.widget ul .children,
+.widget ul .sub-menu {
+	margin: 0.5em 0 0.5em 1em;
+	padding: 0;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
 /* Theme Search Widget */
 .search-form {
 	position: relative;

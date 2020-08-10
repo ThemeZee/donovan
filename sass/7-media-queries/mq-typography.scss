@@ -1,0 +1,125 @@
+@media only screen and (min-width: 20em) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		@include font-size(16);
+	}
+
+	.site-title {
+		@include font-size(36);
+	}
+
+	.entry-title {
+		@include font-size(22);
+	}
+}
+
+@media only screen and (min-width: 30em) {
+	.entry-title {
+		@include font-size(24);
+	}
+}
+
+@media only screen and (min-width: 35em) {
+	.entry-title {
+		@include font-size(26);
+	}
+}
+
+@media only screen and (min-width: 40em) {
+	body,
+	button,
+	input,
+	select,
+	textarea {
+		@include font-size(17);
+	}
+
+	.site-title {
+		@include font-size(40);
+	}
+
+	.site-description {
+		@include font-size(15);
+	}
+
+	.entry-title {
+		@include font-size(28);
+	}
+
+	.entry-meta {
+		@include font-size(15);
+	}
+
+	.entry-meta span .icon {
+		margin: 0.3em 0.3em 0 0;
+		width: 19px;
+		height: 19px;
+	}
+
+	.widget-title,
+	.archive-title,
+	.comments-title,
+	.comment-reply-title,
+	.post-navigation .nav-links .entry-title {
+		@include font-size(20);
+	}
+
+	/* Blog Layout Title */
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+		@include font-size(20);
+	}
+}
+
+@media only screen and (min-width: 50em) {
+	.entry-title {
+		@include font-size(32);
+	}
+
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+		@include font-size(24);
+	}
+}
+
+@media only screen and (min-width: 55em) {
+	.entry-title {
+		@include font-size(28);
+	}
+
+	/* Blog Layout Title */
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+		@include font-size(20);
+	}
+}
+
+@media only screen and (min-width: 70em) {
+	.entry-title {
+		@include font-size(32);
+	}
+
+	/* Blog Layout Title */
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
+		@include font-size(24);
+	}
+}
+
+@media only screen and (min-width: 90em) {
+	.entry-title {
+		@include font-size(36);
+	}
+
+	.entry-content {
+		@include font-size(18);
+	}
+
+	.blog-list-layout .content-archive .post-wrapper .type-post .entry-content,
+	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-content {
+		@include font-size(17);
+	}
+}

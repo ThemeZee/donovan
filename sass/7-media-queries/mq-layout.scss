@@ -1,12 +1,54 @@
-@media only screen and (min-width: 40em) {
-	body,
-	button,
-	input,
-	select,
-	textarea {
-		@include font-size(17);
+@media only screen and (min-width: 25em) {
+	.container {
+		padding-left: 1rem;
+		padding-right: 1rem;
 	}
 
+	.primary-navigation-container {
+		padding: 0;
+	}
+
+	.site-header,
+	.widget,
+	.page-header,
+	.site-main > article,
+	.post-wrapper > article,
+	.type-post,
+	.type-page,
+	.type-attachment,
+	.comment,
+	.comments-title,
+	.comment-navigation,
+	.comment-respond,
+	.post-navigation .nav-links .nav-previous,
+	.post-navigation .nav-links .nav-next,
+	.pagination,
+	.infinite-scroll #infinite-handle span {
+		margin-bottom: 1rem;
+		border-bottom: none;
+	}
+
+	.pagination,
+	.infinite-scroll #infinite-handle,
+	.infinite-scroll .infinite-loader {
+		padding: 0;
+		background: none;
+		border-bottom: none;
+	}
+
+	.pagination .page-numbers,
+	.pagination .current {
+		padding: 0.35rem 1rem;
+		margin-right: 0.5rem;
+	}
+
+	.site-footer .site-info {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (min-width: 40em) {
 	.container {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
@@ -33,35 +75,6 @@
 		margin-bottom: 1.5rem;
 	}
 
-	.site-title {
-		@include font-size(40);
-	}
-
-	.site-description {
-		@include font-size(15);
-	}
-
-	.entry-title {
-		@include font-size(28);
-	}
-
-	.entry-meta {
-		@include font-size(15);
-	}
-
-	.entry-meta span .icon {
-		margin: 0.3em 0.3em 0 0;
-		width: 19px;
-		height: 19px;
-	}
-
-	.widget-title,
-	.archive-title,
-	.comments-title,
-	.comment-reply-title {
-		@include font-size(20);
-	}
-
 	/* Post Navigation */
 	.post-navigation .nav-links {
 		display: grid;
@@ -74,10 +87,6 @@
 	.post-navigation .nav-links .nav-next {
 		margin-bottom: 1.5rem;
 		grid-row: 1;
-	}
-
-	.post-navigation .nav-links .entry-title {
-		@include font-size(20);
 	}
 
 	/* Blog: List Layout */
@@ -113,16 +122,11 @@
 	.blog-grid-layout .content-archive .post-wrapper .type-post {
 		margin: 0;
 	}
-
-	/* Blog Layout Title */
-	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
-	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
-		@include font-size(20);
-	}
 }
 
 /* CSS Grid Fallback for Internet Explorer */
 @media only screen and (min-width: 40em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
 	/* Post Navigation */
 	.post-navigation .nav-links {
 		display: flex;
@@ -168,5 +172,82 @@
 		margin-bottom: 1.5rem;
 		margin-right: 3%;
 		width: 47%;
+	}
+}
+
+@media only screen and (min-width: 55em) {
+	@supports ( display: grid ) {
+		.site-content {
+			display: grid;
+			grid-template-columns: 7fr 3fr;
+			grid-column-gap: 1.5rem;
+		}
+
+		.content-area {
+			box-sizing: border-box;
+			grid-row-start: 2;
+			grid-column-start: 1;
+			min-width: 0;
+		}
+
+		.sidebar {
+			grid-row-start: 2;
+			grid-column-start: 2;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			border: none;
+			min-width: 0;
+		}
+	}
+
+	/* Header */
+	.header-main {
+		position: relative;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		text-align: left;
+	}
+
+	.header-social-menu {
+		display: flex;
+		margin-top: 0;
+		margin-left: auto;
+		align-items: center;
+	}
+
+	.site-footer .site-info {
+		text-align: left;
+	}
+}
+
+/* CSS Grid Fallback for Internet Explorer */
+@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.site-content {
+		display: flex;
+	}
+
+	.no-sidebar .site-content {
+		display: block;
+	}
+
+	.content-area {
+		width: 70%;
+		box-sizing: border-box;
+		padding-right: 0.75rem;
+	}
+
+	.sidebar {
+		width: 30%;
+		box-sizing: border-box;
+		padding-left: 0.75rem;
+	}
+}
+
+@media only screen and (min-width: 75em) {
+	.header-main {
+		padding-top: 2em;
+		padding-bottom: 2em;
 	}
 }

@@ -1,58 +1,4 @@
 @media only screen and (min-width: 55em) {
-	@supports ( display: grid ) {
-		.site-content {
-			display: grid;
-			grid-template-columns: 7fr 3fr;
-			grid-column-gap: 1.5rem;
-		}
-
-		.content-area {
-			box-sizing: border-box;
-			grid-row-start: 2;
-			grid-column-start: 1;
-			min-width: 0;
-		}
-
-		.sidebar {
-			grid-row-start: 2;
-			grid-column-start: 2;
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-			border: none;
-			min-width: 0;
-		}
-	}
-
-	/* Header */
-	.header-main {
-		position: relative;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		text-align: left;
-	}
-
-	.header-social-menu {
-		display: flex;
-		margin-top: 0;
-		margin-left: auto;
-		align-items: center;
-	}
-
-	.site-footer .site-info {
-		text-align: left;
-	}
-
-	.entry-title {
-		@include font-size(28);
-	}
-
-	/* Blog Layout Title */
-	.blog-list-layout .content-archive .post-wrapper .type-post .entry-title,
-	.blog-grid-layout .content-archive .post-wrapper .type-post .entry-title {
-		@include font-size(20);
-	}
 
 	/*** Main Navigation ***/
 	.main-navigation-toggle {
@@ -162,28 +108,5 @@
 
 	.main-navigation-menu li.current-menu-item > a:after {
 		text-decoration: none;
-	}
-}
-
-/* CSS Grid Fallback for Internet Explorer */
-@media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.site-content {
-		display: flex;
-	}
-
-	.no-sidebar .site-content {
-		display: block;
-	}
-
-	.content-area {
-		width: 70%;
-		box-sizing: border-box;
-		padding-right: 0.75rem;
-	}
-
-	.sidebar {
-		width: 30%;
-		box-sizing: border-box;
-		padding-left: 0.75rem;
 	}
 }
