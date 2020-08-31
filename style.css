@@ -3421,8 +3421,7 @@ ul.related-posts-list {
 		display: block;
 	}
 
-	.no-sidebar .site-content .content-area .post-content,
-	.no-sidebar .site-content .content-area .entry-footer {
+	.no-sidebar .site-content .content-area {
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 840px;
@@ -3456,6 +3455,7 @@ ul.related-posts-list {
 	.no-sidebar .content-area,
 	.post-template-template-fullwidth .content-area,
 	.page-template-template-fullwidth .content-area {
+		max-width: 100%;
 		width: 100%;
 		padding: 0;
 	}
