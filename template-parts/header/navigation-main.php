@@ -2,7 +2,7 @@
 /**
  * Main Navigation
  *
- * @version 1.1
+ * @version 1.2
  * @package Donovan
  */
 ?>
@@ -15,7 +15,7 @@
 
 			<?php do_action( 'donovan_header_search' ); ?>
 
-			<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<button class="primary-menu-toggle menu-toggle" aria-controls="primary-menu" aria-expanded="false" <?php donovan_amp_menu_toggle(); ?>>
 				<?php
 				echo donovan_get_svg( 'menu' );
 				echo donovan_get_svg( 'close' );
@@ -25,7 +25,7 @@
 
 			<div class="primary-navigation">
 
-				<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'donovan' ); ?>">
+				<nav id="site-navigation" class="main-navigation" <?php donovan_amp_menu_is_toggled(); ?> role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'donovan' ); ?>">
 
 					<?php
 					wp_nav_menu(

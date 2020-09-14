@@ -74,3 +74,32 @@ function donovan_wrapper_end() {
 }
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10 );
 add_action( 'woocommerce_after_main_content', 'donovan_wrapper_end', 10 );
+
+
+/**
+ * Checks if AMP page is rendered.
+ */
+function donovan_is_amp() {
+	return function_exists( 'is_amp_endpoint' ) && is_amp_endpoint();
+}
+
+
+/**
+ * Adds amp support for menu toggle.
+ */
+function donovan_amp_menu_toggle() {
+	if ( donovan_is_amp() ) {
+		echo "[aria-expanded]=\"primaryMenuExpanded? 'true' : 'false'\" ";
+		echo 'on="tap:AMP.setState({primaryMenuExpanded: !primaryMenuExpanded})"';
+	}
+}
+
+
+/**
+ * Adds amp support for mobile dropdown navigation menu.
+ */
+function donovan_amp_menu_is_toggled() {
+	if ( donovan_is_amp() ) {
+		echo "[class]=\"'main-navigation' + ( primaryMenuExpanded ? ' toggled-on' : '' )\"";
+	}
+}
