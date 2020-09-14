@@ -39,6 +39,8 @@ function donovan_theme_addons_setup() {
 	// Add Theme Support for wooCommerce.
 	add_theme_support( 'woocommerce' );
 
+	// Add theme support for AMP.
+	add_theme_support( 'amp' );
 }
 add_action( 'after_setup_theme', 'donovan_theme_addons_setup' );
 

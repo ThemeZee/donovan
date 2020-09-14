@@ -25,7 +25,7 @@
 
 			<div class="primary-navigation">
 
-				<nav id="site-navigation" class="main-navigation" <?php donovan_amp_menu_is_toggled(); ?> role="navigation" aria-label="<?php esc_attr_e( 'Primary Menu', 'donovan' ); ?>">
+				<nav id="site-navigation" class="main-navigation" role="navigation" <?php donovan_amp_menu_is_toggled(); ?> aria-label="<?php esc_attr_e( 'Primary Menu', 'donovan' ); ?>">
 
 					<?php
 					wp_nav_menu(
