@@ -13,8 +13,9 @@
 	@include color(--widget-title-color);
 	@include font-size(18);
 	@include font-family(--widget-title-font);
-	font-weight: normal;
-	line-height: 1.4;
+	@include font-weight(--widget-title-font-weight);
+	@include text-transform(--widget-title-text-transform);
+	@include line-height(--title-line-height);
 }
 
 .blog-description,

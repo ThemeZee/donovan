@@ -44,6 +44,14 @@
 	--title-font: Quicksand, Tahoma, Arial;
 	--navi-font: Quicksand, Tahoma, Arial;
 	--widget-title-font: Quicksand, Tahoma, Arial;
+	--title-font-weight: normal;
+	--navi-font-weight: normal;
+	--widget-title-font-weight: normal;
+	--title-text-transform: none;
+	--navi-text-transform: none;
+	--widget-title-text-transform: none;
+	--text-line-height: 1.75;
+	--title-line-height: 1.4;
 	--tz-column-gap: 1.5rem;
 }
 

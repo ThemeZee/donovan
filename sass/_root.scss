@@ -17,9 +17,17 @@
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
-	--text-font: Raleway, Arial, Helvetica;
-	--title-font: Quicksand, Tahoma, Arial;
-	--navi-font: Quicksand, Tahoma, Arial;
-	--widget-title-font: Quicksand, Tahoma, Arial;
+	@include variable(--text-font, $themeFonts);
+	@include variable(--title-font, $themeFonts);
+	@include variable(--navi-font, $themeFonts);
+	@include variable(--widget-title-font, $themeFonts);
+	@include variable(--title-font-weight, $fontWeight);
+	@include variable(--navi-font-weight, $fontWeight);
+	@include variable(--widget-title-font-weight, $fontWeight);
+	@include variable(--title-text-transform, $textTransform);
+	@include variable(--navi-text-transform, $textTransform);
+	@include variable(--widget-title-text-transform, $textTransform);
+	@include variable(--text-line-height, $lineHeight);
+	@include variable(--title-line-height, $lineHeight);
 	--tz-column-gap: 1.5rem;
 }

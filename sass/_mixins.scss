@@ -1,4 +1,4 @@
-// Fill Icon CSS Variable
+// Font Family Variable
 @mixin font-family($fontVar) {
 	font-family: map-get($themeFonts, $fontVar);
 	font-family: var($fontVar);
@@ -8,6 +8,24 @@
 @mixin font-size($sizeValue: 1) {
 	font-size: $sizeValue * 1px;
 	font-size: ($sizeValue / 16) * 1rem;
+}
+
+// Font Weight Variable
+@mixin font-weight($fontVar) {
+	font-weight: map-get($fontWeight, $fontVar);
+	font-weight: var($fontVar);
+}
+
+// Text Transform Variable
+@mixin text-transform($textVar) {
+	text-transform: map-get($textTransform, $textVar);
+	text-transform: var($textVar);
+}
+
+// Line Height Variable
+@mixin line-height($lineVar) {
+	line-height: map-get($lineHeight, $lineVar);
+	line-height: var($lineVar);
 }
 
 // Color CSS Variable
@@ -26,4 +44,9 @@
 @mixin fill($colorVar) {
 	fill: map-get($themeColors, $colorVar);
 	fill: var($colorVar);
+}
+
+// CSS Variable
+@mixin variable($variable, $map) {
+	#{$variable}: map-get($map, $variable);
 }

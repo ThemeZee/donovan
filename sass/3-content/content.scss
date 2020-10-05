@@ -20,8 +20,9 @@
 	@include color(--title-color);
 	@include font-size(20);
 	@include font-family(--title-font);
-	font-weight: normal;
-	line-height: 1.4;
+	@include font-weight(--title-font-weight);
+	@include text-transform(--title-text-transform);
+	@include line-height(--title-line-height);
 }
 
 .entry-title a:link,

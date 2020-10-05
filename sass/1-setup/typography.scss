@@ -6,7 +6,7 @@ textarea {
 	color: $textColor;
 	@include font-size(15);
 	@include font-family(--text-font);
-	line-height: 1.75;
+	@include line-height(--text-line-height);
 }
 
 h1,
@@ -17,7 +17,7 @@ h5,
 h6 {
 	clear: both;
 	margin: 1em 0 0.75em;
-	line-height: 1.4;
+	@include line-height(--title-line-height);
 }
 
 h1 {
