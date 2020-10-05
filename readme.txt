@@ -26,6 +26,10 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.7.1 - 2020-10-05 =
+* added AMP dropdown toggles for sub menus
+* added CSS variables for typography styling
+
 = 1.7 - 2020-09-16 =
 * added support for the official AMP plugin
 
