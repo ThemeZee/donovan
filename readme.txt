@@ -156,15 +156,19 @@ Copyright: 2012-2015 Nicolas Gallagher and Jonathan Neal
 License: Licensed under MIT license (https://github.com/Keyamoon/svgxuse/blob/master/license)
 Copyright: 2017 IcoMoon.io
 
-6. Quicksand Font - https://fonts.google.com/specimen/Quicksand
+6. WPTT Webfont Loader - https://github.com/WPTT/webfont-loader
+License: Distributed under the terms of the MIT License (https://github.com/WPTT/webfont-loader/blob/master/LICENSE)
+Copyright: 2020 Ari Stathopoulos, WordPress Themes Team
+
+7. Quicksand Font - https://fonts.google.com/specimen/Quicksand
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 Copyright: Andrew Paglinawan
 
-7. Raleway Font - https://fonts.google.com/specimen/Raleway
+8. Raleway Font - https://fonts.google.com/specimen/Raleway
 License: Distributed under the terms of the Open Font License (http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL_web)
 Copyright: Matt McInerney, Pablo Impallari, Rodrigo Fuenzalida, Igino Marini
 
-8. Image used in screenshot.jpg
+9. Image used in screenshot.jpg
 
 Image 1: https://pixabay.com/en/car-vehicle-motor-transport-speed-3046424/
 License: Distributed under the terms of the CC0 License (https://creativecommons.org/publicdomain/zero/1.0/)
