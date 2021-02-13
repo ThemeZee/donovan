@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.8 - 2021-02-13 =
+* added WPTT Webfont loader to host theme fonts locally
+
 = 1.7.1 - 2020-10-05 =
 * added AMP dropdown toggles for sub menus
 * added CSS variables for typography styling

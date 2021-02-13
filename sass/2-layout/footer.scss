@@ -4,7 +4,6 @@
 
 .site-footer {
 	@include font-size(16);
-	@include font-family(--navi-font);
 }
 
 .site-footer a:link,
