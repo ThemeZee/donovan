@@ -1,7 +1,7 @@
 /* Styling for all post details */
 .entry-meta,
 .entry-footer {
-	color: rgba(0,0,0,0.5);
+	@include color(--light-text-color);
 	@include font-size(15);
 }
 
@@ -9,7 +9,7 @@
 .entry-meta a:visited,
 .entry-footer a:link,
 .entry-footer a:visited {
-	color: rgba(0,0,0,0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
@@ -27,7 +27,8 @@
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	border-bottom: 1px dotted rgba(0,0,0,0.15);
+	border-bottom: 1px dotted;
+	@include border-color(--medium-border-color);
 }
 
 .entry-meta a:hover,
@@ -43,7 +44,8 @@
 .entry-footer {
 	margin: 1.5rem 0 0;
 	padding: 1rem 0 0;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 2px solid;
+	@include border-color(--page-border-color);
 }
 
 .entry-footer div .icon {
@@ -51,7 +53,7 @@
 	width: 20px;
 	height: 20px;
 	vertical-align: top;
-	fill: rgba(0,0,0,0.3);
+	fill: rgba(0, 0, 0, 0.3);
 }
 
 .entry-footer .entry-comments .icon {

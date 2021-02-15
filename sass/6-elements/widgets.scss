@@ -3,8 +3,9 @@
 	padding: 1.5rem;
 	max-width: 100%;
 	word-wrap: break-word;
-	background: #fff;
-	border-bottom: 1px solid rgba(0,0,0,0.05);
+	@include background(--page-background-color);
+	border-bottom: 1px solid;
+	@include border-color(--page-border-color);
 }
 
 .widget-title {
@@ -19,12 +20,12 @@
 }
 
 .widget a:link,
-.widget a:visited  {
+.widget a:visited {
 	text-decoration: none;
 }
 
 .widget a:hover,
-.widget a:active  {
+.widget a:active {
 	text-decoration: underline;
 }
 

@@ -4,7 +4,7 @@
 	padding: 1.5rem;
 	max-width: 100%;
 	word-wrap: break-word;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .archive-title {

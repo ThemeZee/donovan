@@ -6,10 +6,14 @@ $themeColors: (
 	// Text Colors
 	--text-color               : #202020,
 	--medium-text-color        : #707070,
-	--light-text-color         : #909090,
+	--light-text-color         : rgba(0, 0, 0, 0.5),
 	--dark-border-color        : #202020,
 	--medium-border-color      : rgba(0, 0, 0, 0.15),
 	--light-border-color       : rgba(0, 0, 0, 0.075),
+
+	// Page
+	--page-background-color    : #fff,
+	--page-border-color        : rgba(0, 0, 0, 0.05),
 
 	// Links and Buttons
 	--link-color               : #ee1133,

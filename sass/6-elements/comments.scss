@@ -13,7 +13,7 @@
 	@include font-weight(--widget-title-font-weight);
 	@include text-transform(--widget-title-text-transform);
 	@include line-height(--title-line-height);
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment-reply-title {
@@ -30,7 +30,7 @@
 .comment {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment .comment-body {
@@ -58,7 +58,7 @@
 .comment-meta .comment-metadata {
 	margin-top: 0.3em;
 	@include font-size(14);
-	color: rgba(0,0,0,0.5);
+	@include color(--light-text-color);
 }
 
 .comment-meta .comment-metadata a {
@@ -68,7 +68,7 @@
 
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
-	color: rgba(0,0,0,0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
@@ -91,7 +91,8 @@
 .comment ol.children .comment {
 	margin: 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 2px solid;
+	@include border-color(--page-border-color);
 }
 
 /* Comment Reply */
@@ -102,14 +103,15 @@
 .comment .comment-respond {
 	margin: 1.5em 0 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0,0,0,0.05);
+	border-top: 2px solid;
+	@include border-color(--page-border-color);
 }
 
 /* Comment Pagination */
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment-navigation .nav-previous {
@@ -122,7 +124,7 @@
 
 .comment-navigation a:link,
 .comment-navigation a:visited {
-	color: rgba(0,0,0,0.5);
+	@include color(--light-text-color);
 	text-decoration: none;
 }
 
@@ -145,7 +147,7 @@
 .comment-respond {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	background: #fff;
+	@include background(--page-background-color);
 }
 
 .comment-form {

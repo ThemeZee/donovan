@@ -75,10 +75,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 :root {
 	--text-color: #202020;
 	--medium-text-color: #707070;
-	--light-text-color: #909090;
+	--light-text-color: rgba(0, 0, 0, 0.5);
 	--dark-border-color: #202020;
 	--medium-border-color: rgba(0, 0, 0, 0.15);
 	--light-border-color: rgba(0, 0, 0, 0.075);
+	--page-background-color: #fff;
+	--page-border-color: rgba(0, 0, 0, 0.05);
 	--link-color: #ee1133;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
@@ -1098,8 +1100,11 @@ textarea {
 	padding: 1.5rem;
 	max-width: 100%;
 	box-sizing: border-box;
-	background: #fff;
-	border-bottom: 1px solid #f5f5f5;
+	background-color: #fff;
+	background-color: var(--page-background-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 	min-width: 0;
 	word-wrap: break-word;
 }
@@ -1190,6 +1195,7 @@ textarea {
 .entry-meta,
 .entry-footer {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -1199,6 +1205,7 @@ textarea {
 .entry-footer a:link,
 .entry-footer a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
@@ -1217,7 +1224,9 @@ textarea {
 
 .entry-meta a:link,
 .entry-meta a:visited {
-	border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+	border-bottom: 1px dotted;
+	border-color: rgba(0, 0, 0, 0.15);
+	border-color: var(--medium-border-color);
 }
 
 .entry-meta a:hover,
@@ -1233,7 +1242,9 @@ textarea {
 .entry-footer {
 	margin: 1.5rem 0 0;
 	padding: 1rem 0 0;
-	border-top: 2px solid rgba(0, 0, 0, 0.05);
+	border-top: 2px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 .entry-footer div .icon {
@@ -1284,9 +1295,12 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 1.5em;
 	max-width: 100%;
 	word-wrap: break-word;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 	box-sizing: border-box;
-	border-bottom: 1px solid #f5f5f5;
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 .post-navigation .nav-links .nav-next {
@@ -1312,6 +1326,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .post-navigation .nav-links .nav-link-text {
 	display: block;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 }
 
 .post-navigation .nav-links .nav-previous .nav-link-text:before {
@@ -1334,7 +1349,8 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 1.5rem;
 	max-width: 100%;
 	word-wrap: break-word;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .archive-title {
@@ -1368,8 +1384,11 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .pagination {
 	margin-bottom: 0;
 	padding: 1.5rem;
-	background: #fff;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	background-color: var(--page-background-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 .pagination .page-numbers,
@@ -1412,8 +1431,11 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	width: 100%;
 	text-align: center;
 	padding: 1.5rem;
-	background: #fff;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	background-color: var(--page-background-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 .infinite-scroll .infinite-loader .spinner {
@@ -1601,8 +1623,11 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	padding: 1.5rem;
 	max-width: 100%;
 	word-wrap: break-word;
-	background: #fff;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	background-color: var(--page-background-color);
+	border-bottom: 1px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 .widget-title {
@@ -1737,7 +1762,8 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	text-transform: var(--widget-title-text-transform);
 	line-height: 1.4;
 	line-height: var(--title-line-height);
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment-reply-title {
@@ -1754,7 +1780,8 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment .comment-body {
@@ -1784,6 +1811,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	font-size: 14px;
 	font-size: 0.875rem;
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 }
 
 .comment-meta .comment-metadata a {
@@ -1793,6 +1821,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment-meta .comment-metadata a:link,
 .comment-meta .comment-metadata a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
@@ -1816,7 +1845,9 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment ol.children .comment {
 	margin: 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0, 0, 0, 0.05);
+	border-top: 2px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 /* Comment Reply */
@@ -1828,14 +1859,17 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment .comment-respond {
 	margin: 1.5em 0 0;
 	padding: 1.5rem 0 0;
-	border-top: 2px solid rgba(0, 0, 0, 0.05);
+	border-top: 2px solid;
+	border-color: rgba(0, 0, 0, 0.05);
+	border-color: var(--page-border-color);
 }
 
 /* Comment Pagination */
 .comment-navigation {
 	margin: 0 0 1rem;
 	padding: 1rem;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment-navigation .nav-previous {
@@ -1849,6 +1883,7 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment-navigation a:link,
 .comment-navigation a:visited {
 	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	text-decoration: none;
 }
 
@@ -1872,7 +1907,8 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .comment-respond {
 	margin: 0 0 1em;
 	padding: 1.5rem;
-	background: #fff;
+	background-color: #fff;
+	background-color: var(--page-background-color);
 }
 
 .comment-form {
@@ -1939,7 +1975,8 @@ object {
 	max-width: 100%;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -1998,7 +2035,8 @@ object {
 	margin: 0.5rem 0 0;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 0.5);
+	color: var(--light-text-color);
 	line-height: 1.4;
 }
 

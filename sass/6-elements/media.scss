@@ -21,7 +21,7 @@ object {
 	margin-bottom: 0.5em;
 	max-width: 100%;
 	@include font-size(15);
-	color: rgba(0,0,0,0.6);
+	@include color(--light-text-color);
 }
 
 .wp-caption img[class*="wp-image-"] {
@@ -79,7 +79,7 @@ object {
 	display: block;
 	margin: 0.5rem 0 0;
 	@include font-size(15);
-	color: rgba(0,0,0,0.6);
+	@include color(--light-text-color);
 	line-height: 1.4;
 }
 

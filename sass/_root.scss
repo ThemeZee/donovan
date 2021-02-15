@@ -8,6 +8,10 @@
 	@include variable(--medium-border-color, $themeColors);
 	@include variable(--light-border-color, $themeColors);
 
+	// Page
+	@include variable(--page-background-color, $themeColors);
+	@include variable(--page-border-color, $themeColors);
+
 	// Links and Buttons
 	@include variable(--link-color, $themeColors);
 	@include variable(--button-color, $themeColors);
