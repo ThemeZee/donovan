@@ -74,7 +74,7 @@
 
 .comment-meta .comment-metadata a:hover,
 .comment-meta .comment-metadata a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 /* Comment Content */
@@ -128,7 +128,7 @@
 
 .comment-navigation a:hover,
 .comment-navigation a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 .comment-navigation .nav-previous a:before {

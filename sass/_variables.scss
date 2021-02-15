@@ -1,14 +1,24 @@
-// Text Color
-$textColor: #202020;
+
 
 // Theme Colors
 $themeColors: (
+
+	// Text Colors
+	--text-color               : #202020,
+	--medium-text-color        : #707070,
+	--light-text-color         : #909090,
+	--dark-border-color        : #202020,
+	--medium-border-color      : rgba(0, 0, 0, 0.15),
+	--light-border-color       : rgba(0, 0, 0, 0.075),
+
+	// Links and Buttons
 	--link-color               : #ee1133,
 	--button-color             : #ee1133,
 	--button-text-color        : #fff,
 	--button-hover-color       : #D5001A,
 	--button-hover-text-color  : #fff,
-	--title-color              : #202020,
+
+	// Navigation
 	--navi-color               : #202020,
 	--navi-text-color          : #fff,
 	--navi-hover-text-color    : rgba(255, 255, 255, 0.5),
@@ -17,7 +27,12 @@ $themeColors: (
 	--submenu-text-color       : #fff,
 	--submenu-hover-text-color : rgba(255, 255, 255, 0.5),
 	--submenu-border-color     : rgba(255, 255, 255, 0.075),
+
+	// Titles
+	--title-color              : #202020,
 	--widget-title-color       : #202020,
+
+	// Footer
 	--footer-color             : #202020,
 	--footer-text-color        : #fff,
 	--footer-hover-text-color  : rgba(255, 255, 255, 0.5),

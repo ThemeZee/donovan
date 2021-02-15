@@ -45,7 +45,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 # 3.0 - Typography
 --------------------------------------------------------------*/
 .editor-styles-wrapper > * {
-	color: $textColor;
+	@include color(--text-color);
 	@include font-size(15);
 	@include font-family(--text-font);
 	line-height: 1.75;
@@ -125,7 +125,8 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .wp-block-quote {
 	margin: 0 0 1.5em;
 	padding-left: 1.25em;
-	border-left: 4px solid $textColor;
+	border-left: 4px solid;
+	@include border-color(--dark-border-color);
 	color: #777;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -133,7 +134,8 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.25em;
-	border-left: 4px solid $textColor;
+	border-left: 4px solid;
+	@include border-color(--dark-border-color);
 }
 
 .wp-block-quote__citation,
@@ -141,7 +143,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .wp-block-quote footer {
 	display: block;
 	margin-top: 1em;
-	color: $textColor;
+	@include color(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	font-style: normal;
@@ -173,8 +175,9 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-    border-bottom: 4px solid $textColor;
-    border-top: 4px solid $textColor;
+	border-bottom: 4px solid;
+	border-top: 4px solid;
+	@include border-color(--dark-border-color);
 }
 
 .wp-block-pullquote blockquote {

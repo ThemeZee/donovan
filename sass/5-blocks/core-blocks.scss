@@ -36,8 +36,9 @@
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-	border-bottom: 4px solid $textColor;
-	border-top: 4px solid $textColor;
+	border-bottom: 4px solid;
+	border-top: 4px solid;
+	@include border-color(--dark-border-color);
 }
 
 .wp-block-pullquote blockquote {

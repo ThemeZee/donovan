@@ -1,6 +1,6 @@
 /* Styling for ThemeZee Magazine Blocks */
 .edit-post-visual-editor .tz-magazine-block {
-	
+
 	.tz-entry-image {
 		margin-bottom: 0.5em;
 	}
@@ -21,7 +21,7 @@
 		@include color(--title-color);
 		text-decoration: none;
 	}
-	
+
 	.tz-entry-title a:hover,
 	.tz-entry-title a:active {
 		text-decoration: underline;
@@ -30,7 +30,7 @@
 	.tz-magazine-grid-columns-3 .tz-entry-title {
 		@include font-size(20);
 	}
-	
+
 	.tz-magazine-grid-columns-4 .tz-entry-title,
 	.tz-magazine-thumbnail-list .tz-entry-title {
 		@include font-size(18);
@@ -55,7 +55,7 @@
 
 	.tz-entry-meta a:hover,
 	.tz-entry-meta a:active {
-		color: $textColor;
+		@include color(--text-color);
 		text-decoration: none;
 	}
 
@@ -65,7 +65,7 @@
 
 		p {
 			@include font-size(17);
-		} 
+		}
 	}
 
 	.tz-more-link {
@@ -76,17 +76,17 @@
 		@include background(--button-color);
 		@include font-size(15);
 	}
-	
+
 	.tz-more-link:link,
 	.tz-more-link:visited  {
 		@include color(--button-text-color);
 		text-decoration: none;
 	}
-	
+
 	.tz-more-link:hover,
 	.tz-more-link:active {
 		@include color(--button-hover-text-color);
 		@include background(--button-hover-color);
 		text-decoration: none;
-	}	
+	}
 }

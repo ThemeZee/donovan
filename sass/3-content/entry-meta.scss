@@ -17,7 +17,7 @@
 .entry-meta a:active,
 .entry-footer a:hover,
 .entry-footer a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 /* Entry Meta */

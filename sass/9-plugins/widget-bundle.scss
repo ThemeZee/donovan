@@ -40,7 +40,7 @@
 
 .tzwb-posts-list .tzwb-entry-meta a:hover,
 .tzwb-posts-list .tzwb-entry-meta a:active {
-	color: $textColor;
+	@include color(--text-color);
 }
 
 /* Comments List */

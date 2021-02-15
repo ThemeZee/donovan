@@ -22,12 +22,17 @@
 # 1.0 - Variables
 --------------------------------------------------------------*/
 :root {
+	--text-color: #202020;
+	--medium-text-color: #707070;
+	--light-text-color: #909090;
+	--dark-border-color: #202020;
+	--medium-border-color: rgba(0, 0, 0, 0.15);
+	--light-border-color: rgba(0, 0, 0, 0.075);
 	--link-color: #ee1133;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
 	--button-hover-color: #D5001A;
 	--button-hover-text-color: #fff;
-	--title-color: #202020;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
 	--navi-hover-text-color: rgba(255, 255, 255, 0.5);
@@ -36,6 +41,8 @@
 	--submenu-text-color: #fff;
 	--submenu-hover-text-color: rgba(255, 255, 255, 0.5);
 	--submenu-border-color: rgba(255, 255, 255, 0.075);
+	--title-color: #202020;
+	--widget-title-color: #202020;
 	--footer-color: #202020;
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
@@ -79,6 +86,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 --------------------------------------------------------------*/
 .editor-styles-wrapper > * {
 	color: #202020;
+	color: var(--text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
 	font-family: Raleway, Arial, Helvetica;
@@ -168,7 +176,9 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .wp-block-quote {
 	margin: 0 0 1.5em;
 	padding-left: 1.25em;
-	border-left: 4px solid #202020;
+	border-left: 4px solid;
+	border-color: #202020;
+	border-color: var(--dark-border-color);
 	color: #777;
 	font-size: 18px;
 	font-size: 1.125rem;
@@ -176,7 +186,9 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 
 .wp-block-quote:not(.is-large):not(.is-style-large) {
 	padding-left: 1.25em;
-	border-left: 4px solid #202020;
+	border-left: 4px solid;
+	border-color: #202020;
+	border-color: var(--dark-border-color);
 }
 
 .wp-block-quote__citation,
@@ -185,6 +197,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 	display: block;
 	margin-top: 1em;
 	color: #202020;
+	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
 	font-style: normal;
@@ -217,8 +230,10 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .wp-block-pullquote {
 	margin-bottom: 1.5em;
 	padding: 1.5em 0;
-	border-bottom: 4px solid #202020;
-	border-top: 4px solid #202020;
+	border-bottom: 4px solid;
+	border-top: 4px solid;
+	border-color: #202020;
+	border-color: var(--dark-border-color);
 }
 
 .wp-block-pullquote blockquote {
@@ -449,6 +464,7 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:hover,
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta a:active {
 	color: #202020;
+	color: var(--text-color);
 	text-decoration: none;
 }
 
