@@ -18,7 +18,7 @@ function donovan_gutenberg_support() {
 
 	// Define block color palette.
 	$color_palette = apply_filters( 'donovan_color_palette', array(
-		'primary_color'    => '#cc5555',
+		'primary_color'    => '#ee1133',
 		'secondary_color'  => '#d5001a',
 		'tertiary_color'   => '#bb0000',
 		'accent_color'     => '#1153ee',
