@@ -81,35 +81,6 @@ if ( ! function_exists( 'donovan_setup' ) ) :
 		// Add Theme Support for Selective Refresh in Customizer.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
-		// Add custom color palette for Gutenberg.
-		add_theme_support( 'editor-color-palette', array(
-			array(
-				'name'  => esc_html_x( 'Primary', 'Gutenberg Color Palette', 'donovan' ),
-				'slug'  => 'primary',
-				'color' => apply_filters( 'donovan_primary_color', '#ee1133' ),
-			),
-			array(
-				'name'  => esc_html_x( 'White', 'Gutenberg Color Palette', 'donovan' ),
-				'slug'  => 'white',
-				'color' => '#ffffff',
-			),
-			array(
-				'name'  => esc_html_x( 'Light Gray', 'Gutenberg Color Palette', 'donovan' ),
-				'slug'  => 'light-gray',
-				'color' => '#f2f2f2',
-			),
-			array(
-				'name'  => esc_html_x( 'Dark Gray', 'Gutenberg Color Palette', 'donovan' ),
-				'slug'  => 'dark-gray',
-				'color' => '#666666',
-			),
-			array(
-				'name'  => esc_html_x( 'Black', 'Gutenberg Color Palette', 'donovan' ),
-				'slug'  => 'black',
-				'color' => '#202020',
-			),
-		) );
-
 		// Add support for responsive embed blocks.
 		add_theme_support( 'responsive-embeds' );
 	}
@@ -221,15 +192,6 @@ function donovan_get_fonts_url() {
 
 
 /**
- * Enqueue editor styles for the new Gutenberg Editor.
- */
-function donovan_block_editor_assets() {
-	wp_enqueue_style( 'donovan-editor-styles', get_theme_file_uri( '/assets/css/gutenberg-styles.css' ), array(), '20181102', 'all' );
-}
-add_action( 'enqueue_block_editor_assets', 'donovan_block_editor_assets' );
-
-
-/**
  * Add custom sizes for featured images
  */
 function donovan_add_image_sizes() {
@@ -282,6 +244,9 @@ require get_template_directory() . '/inc/template-functions.php';
 
 // Include Template Tags.
 require get_template_directory() . '/inc/template-tags.php';
+
+// Include Gutenberg Features.
+require get_template_directory() . '/inc/gutenberg.php';
 
 // Include support functions for Theme Addons.
 require get_template_directory() . '/inc/addons.php';

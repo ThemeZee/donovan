@@ -22,6 +22,14 @@
 # 1.0 - Variables
 --------------------------------------------------------------*/
 :root {
+	--primary-color: #ee1133;
+	--secondary-color: #d5001a;
+	--tertiary-color: #bb0000;
+	--accent-color: #1153ee;
+	--highlight-color: #eedc11;
+	--light-gray-color: #f2f2f2;
+	--gray-color: #666;
+	--dark-gray-color: #202020;
 	--text-color: #202020;
 	--medium-text-color: #707070;
 	--light-text-color: rgba(0, 0, 0, 0.5);
@@ -299,48 +307,122 @@ body.block-editor-page .edit-post-visual-editor .editor-post-title__block,
 # 5.0 - Colors
 --------------------------------------------------------------*/
 
-/* Text Colors */
-.has-primary-color {
+/* Block Text Colors */
+.has-primary-color,
+.wp-block-button__link.has-primary-color {
 	color: #ee1133;
-	color: var(--link-color);
+	color: var(--primary-color);
 }
 
-.has-white-color {
-	color: #ffffff;
+.has-secondary-color,
+.wp-block-button__link.has-secondary-color {
+	color: #d5001a;
+	color: var(--secondary-color);
 }
 
-.has-light-gray-color {
+.has-tertiary-color,
+.wp-block-button__link.has-tertiary-color {
+	color: #bb0000;
+	color: var(--tertiary-color);
+}
+
+.has-accent-color,
+.wp-block-button__link.has-accent-color {
+	color: #1153ee;
+	color: var(--accent-color);
+}
+
+.has-highlight-color,
+.wp-block-button__link.has-highlight-color {
+	color: #eedc11;
+	color: var(--highlight-color);
+}
+
+.has-white-color,
+.wp-block-button__link.has-white-color {
+	color: #fff;
+}
+
+.has-light-gray-color,
+.wp-block-button__link.has-light-gray-color {
 	color: #f2f2f2;
+	color: var(--light-gray-color);
 }
 
-.has-dark-gray-color {
-	color: #666666;
+.has-gray-color,
+.wp-block-button__link.has-gray-color {
+	color: #666;
+	color: var(--gray-color);
 }
 
-.has-black-color {
+.has-dark-gray-color,
+.wp-block-button__link.has-dark-gray-color {
 	color: #202020;
+	color: var(--dark-gray-color);
 }
 
-/* Background Colors */
-.has-primary-background-color {
+.has-black-color,
+.wp-block-button__link.has-black-color {
+	color: #000;
+}
+
+/* Block Background Colors */
+.has-primary-background-color,
+.has-primary-background-color[class] {
 	background-color: #ee1133;
-	background-color: var(--link-color);
+	background-color: var(--primary-color);
 }
 
-.has-white-background-color {
-	background-color: #ffffff;
+.has-secondary-background-color,
+.has-secondary-background-color[class] {
+	background-color: #d5001a;
+	background-color: var(--secondary-color);
 }
 
-.has-light-gray-background-color {
+.has-tertiary-background-color,
+.has-tertiary-background-color[class] {
+	background-color: #bb0000;
+	background-color: var(--tertiary-color);
+}
+
+.has-accent-background-color,
+.has-accent-background-color[class] {
+	background-color: #1153ee;
+	background-color: var(--accent-color);
+}
+
+.has-highlight-background-color,
+.has-highlight-background-color[class] {
+	background-color: #eedc11;
+	background-color: var(--highlight-color);
+}
+
+.has-white-background-color,
+.has-white-background-color[class] {
+	background-color: #fff;
+}
+
+.has-light-gray-background-color,
+.has-light-gray-background-color[class] {
 	background-color: #f2f2f2;
+	background-color: var(--light-gray-color);
 }
 
-.has-dark-gray-background-color {
-	background-color: #666666;
+.has-gray-background-color,
+.has-gray-background-color[class] {
+	background-color: #666;
+	background-color: var(--gray-color);
 }
 
-.has-black-background-color {
+.has-dark-gray-background-color,
+.has-dark-gray-background-color[class] {
 	background-color: #202020;
+	background-color: var(--dark-gray-color);
+}
+
+.has-black-background-color,
+.has-black-background-color[class] {
+	background-color: #000;
 }
 
 /*--------------------------------------------------------------
