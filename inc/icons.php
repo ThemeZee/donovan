@@ -141,6 +141,7 @@ function donovan_supported_social_icons() {
 		'snapchat.com'    => 'snapchat',
 		'soundcloud.com'  => 'soundcloud',
 		'spotify.com'     => 'spotify',
+		'strava'          => 'strava',
 		'stumbleupon.com' => 'stumbleupon',
 		'telegram'        => 'telegram',
 		't.me'            => 'telegram',
