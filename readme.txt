@@ -26,6 +26,11 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.8.2 - 2021-06-05 =
+* added filter hooks for social icons menu
+* added Patreon and Strava to social icons menu
+* fixed typo in pagination function
+
 = 1.8.1 - 2021-03-09 =
 * updated Block Editor color palette
 
