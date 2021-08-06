@@ -147,8 +147,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Blocks
 --------------------------------------------------------------*/
-@import '5-blocks/core-blocks';
+@import "5-blocks/formatting-blocks";
+@import "5-blocks/media-blocks";
+@import "5-blocks/container-blocks";
 @import "5-blocks/colors";
+@import "5-blocks/font-sizes";
 
 /*--------------------------------------------------------------
 # - Widgets
@@ -196,6 +199,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ## - Media Queries for Navigation
 --------------------------------------------------------------*/
 @import "7-media-queries/mq-navigation";
+
+/*--------------------------------------------------------------
+## - Media Queries for Blocks
+--------------------------------------------------------------*/
+@import "7-media-queries/mq-blocks";
 
 /*--------------------------------------------------------------
 ## - Media Queries for Media
