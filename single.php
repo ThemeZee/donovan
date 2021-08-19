@@ -19,6 +19,8 @@ get_header(); ?>
 
 			donovan_post_navigation();
 
+			do_action( 'donovan_after_posts' );
+
 			donovan_related_posts();
 
 			// If comments are open or we have at least one comment, load up the comment template.

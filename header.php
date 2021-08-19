@@ -26,6 +26,8 @@
 
 		<?php do_action( 'donovan_header_bar' ); ?>
 
+		<?php do_action( 'donovan_before_header' ); ?>
+
 		<header id="masthead" class="site-header clearfix" role="banner">
 
 			<div class="header-main container clearfix">
@@ -50,4 +52,8 @@
 
 		</header><!-- #masthead -->
 
+		<?php do_action( 'donovan_after_header' ); ?>
+
 		<div id="content" class="site-content container">
+
+			<?php do_action( 'donovan_before_content' ); ?>

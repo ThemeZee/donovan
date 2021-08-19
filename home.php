@@ -15,6 +15,8 @@ get_header(); ?>
 		<?php
 		if ( have_posts() ) :
 
+			do_action( 'donovan_before_blog' );
+
 			donovan_blog_title();
 
 			echo '<div id="post-wrapper" class="post-wrapper">';
