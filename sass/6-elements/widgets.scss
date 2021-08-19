@@ -8,7 +8,8 @@
 	@include border-color(--page-border-color);
 }
 
-.widget-title {
+.widget-title,
+.is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0;
 	@include color(--widget-title-color);

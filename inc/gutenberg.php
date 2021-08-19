@@ -78,6 +78,17 @@ function donovan_gutenberg_support() {
 			'color' => '#000000',
 		),
 	) ) );
+
+	// Check if block style functions are available.
+	if ( function_exists( 'register_block_style' ) ) {
+
+		// Register Widget Title Block style.
+		register_block_style( 'core/heading', array(
+			'name'         => 'widget-title',
+			'label'        => esc_html__( 'Widget Title', 'donovan' ),
+			'style_handle' => 'donovan-stylesheet',
+		) );
+	}
 }
 add_action( 'after_setup_theme', 'donovan_gutenberg_support' );
 

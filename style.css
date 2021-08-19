@@ -1961,7 +1961,8 @@ p.has-background {
 	border-color: var(--page-border-color);
 }
 
-.widget-title {
+.widget-title,
+.is-style-widget-title {
 	margin: 0 0 1rem;
 	padding: 0;
 	color: #202020;
@@ -3071,6 +3072,7 @@ ul.related-posts-list {
 	}
 
 	.widget-title,
+	.is-style-widget-title,
 	.archive-title,
 	.comments-title,
 	.comment-reply-title,
