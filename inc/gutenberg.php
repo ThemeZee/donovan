@@ -13,9 +13,6 @@
  */
 function donovan_gutenberg_support() {
 
-	// Add theme support for wide and full images.
-	#add_theme_support( 'align-wide' );
-
 	// Define block color palette.
 	$color_palette = apply_filters( 'donovan_color_palette', array(
 		'primary_color'    => '#ee1133',
@@ -97,22 +94,6 @@ function donovan_block_editor_assets() {
 	#wp_enqueue_script( 'donovan-page-template-switcher', get_theme_file_uri( '/assets/js/page-template-switcher.js' ), array( 'wp-blocks', 'wp-element', 'wp-edit-post' ), '20210306' );
 }
 add_action( 'enqueue_block_editor_assets', 'donovan_block_editor_assets' );
-
-
-/**
- * Remove inline styling in Gutenberg.
- *
- * @return array $editor_settings
- */
-function donovan_block_editor_settings( $editor_settings ) {
-	// Remove editor styling.
-	if ( ! current_theme_supports( 'editor-styles' ) ) {
-		$editor_settings['styles'] = '';
-	}
-
-	return $editor_settings;
-}
-#add_filter( 'block_editor_settings', 'donovan_block_editor_settings', 11 );
 
 
 /**
