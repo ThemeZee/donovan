@@ -26,6 +26,10 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.8.4 - 2021-08-26 =
+* fixed table layout styling
+* fixed responsive images with Classic Editor
+
 = 1.8.3 - 2021-08-19 =
 * added Widget Title block style
 * added action hooks for additional widget areas
