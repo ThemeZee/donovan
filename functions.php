@@ -134,7 +134,7 @@ function donovan_scripts() {
 
 	// Register and enqueue navigation.min.js.
 	if ( ( has_nav_menu( 'primary' ) || has_nav_menu( 'secondary' ) ) && ! donovan_is_amp() ) {
-		wp_enqueue_script( 'donovan-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array( 'jquery' ), '20200822', true );
+		wp_enqueue_script( 'donovan-navigation', get_theme_file_uri( '/assets/js/navigation.min.js' ), array(), '20211104', true );
 		$donovan_l10n = array(
 			'expand'   => esc_html__( 'Expand child menu', 'donovan' ),
 			'collapse' => esc_html__( 'Collapse child menu', 'donovan' ),
