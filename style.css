@@ -4,9 +4,9 @@ Theme URI: https://themezee.com/themes/donovan/
 Author: ThemeZee
 Author URI: https://themezee.com
 Description: Donovan is a flexible, yet easy-to-use blogging theme with a clean and modern design. It features an elegant mobile-first design, three different blog layouts and extensive post settings. Donovan is perfect for your personal blog or for any content-focused website.
-Version: 1.8.6
+Version: 1.8.7
 Requires at least: 5.2
-Tested up to: 5.9
+Tested up to: 6.0
 Requires PHP: 5.6
 AMP: true
 License: GNU General Public License v2 or later
@@ -1161,6 +1161,14 @@ textarea {
 .wp-post-image {
 	margin: 0 0 1em;
 	vertical-align: top;
+}
+
+.entry-content {
+	margin-top: 1em;
+}
+
+.entry-content > *:first-child {
+	margin-top: 0;
 }
 
 .entry-content p:last-child {
@@ -3547,16 +3555,6 @@ ul.related-posts-list {
 /*--------------------------------------------------------------
 ## - Media Queries for Blocks
 --------------------------------------------------------------*/
-@media only screen and (min-width: 960px) {
-	div.wp-block-columns {
-		gap: 2rem;
-	}
-
-	.wp-block-group.has-background,
-	.wp-block-column.has-background {
-		padding: 2rem;
-	}
-}
 
 /*--------------------------------------------------------------
 ## - Media Queries for Media

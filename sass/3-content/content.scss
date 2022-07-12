@@ -42,6 +42,14 @@
 	vertical-align: top;
 }
 
+.entry-content {
+	margin-top: 1em;
+}
+
+.entry-content > *:first-child {
+	margin-top: 0;
+}
+
 .entry-content p:last-child {
 	margin-bottom: 0;
 }

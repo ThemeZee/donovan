@@ -775,17 +775,6 @@ div.wp-block-columns {
 	width: auto;
 }
 
-@media only screen and (min-width: 960px) {
-	div.wp-block-columns {
-		gap: 2rem;
-	}
-
-	.wp-block-group.has-background,
-	.wp-block-column.has-background {
-		padding: 2rem;
-	}
-}
-
 /* Group Block */
 .wp-block-group.has-background > .wp-block-group__inner-container > .wp-block:last-of-type {
 	margin-bottom: 0;
@@ -794,12 +783,6 @@ div.wp-block-columns {
 /* Columns Block */
 .editor-styles-wrapper div.wp-block-columns {
 	gap: 1.5rem;
-}
-
-@media only screen and (min-width: 960px) {
-	.editor-styles-wrapper div.wp-block-columns {
-		gap: 2rem;
-	}
 }
 
 /* Editor Block Styles */
