@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.8.8 - 2022-08-22 =
+* updated footer credit link
+
 = 1.8.7 - 2022-07-12 =
 * added block support for custom spacing and line heights
 * improved styling of columns block
