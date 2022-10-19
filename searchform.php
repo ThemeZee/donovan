@@ -15,8 +15,7 @@
 			value="<?php echo get_search_query(); ?>" name="s"
 			title="<?php echo esc_attr_x( 'Search for:', 'label', 'donovan' ); ?>" />
 	</label>
-	<button type="submit" class="search-submit">
+	<button type="submit" class="search-submit" aria-label="<?php echo esc_attr_x( 'Search', 'submit button', 'donovan' ); ?>">
 		<?php echo donovan_get_svg( 'search' ); ?>
-		<span class="screen-reader-text"><?php echo esc_html_x( 'Search', 'submit button', 'donovan' ); ?></span>
 	</button>
 </form>
