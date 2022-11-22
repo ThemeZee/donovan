@@ -26,6 +26,9 @@ For more information about Donovan please go to https://themezee.com/themes/dono
 
 == Changelog ==
 
+= 1.9 - 2022-11-22 =
+* added Mastodon to social icons menu
+
 = 1.8.9 - 2022-10-19 =
 * improved accessibility of search form
 
