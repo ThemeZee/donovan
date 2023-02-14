@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
 Theme Name: Donovan
 Theme URI: https://themezee.com/themes/donovan/
@@ -92,7 +94,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--link-color: #ee1133;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
-	--button-hover-color: #D5001A;
+	--button-hover-color: #d5001a;
 	--button-hover-text-color: #fff;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
@@ -108,10 +110,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
-	--text-font: Raleway, Arial, Helvetica;
-	--title-font: Quicksand, Tahoma, Arial;
-	--navi-font: Quicksand, Tahoma, Arial;
-	--widget-title-font: Quicksand, Tahoma, Arial;
+	--text-font: raleway, arial, helvetica, sans-serif;
+	--title-font: quicksand, tahoma, arial, sans-serif;
+	--navi-font: quicksand, tahoma, arial, sans-serif;
+	--widget-title-font: quicksand, tahoma, arial, sans-serif;
 	--title-font-weight: normal;
 	--navi-font-weight: normal;
 	--widget-title-font-weight: normal;
@@ -184,7 +186,7 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 dfn {
@@ -274,7 +276,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	cursor: pointer;
-	-webkit-appearance: button;
+	appearance: button;
 }
 
 button[disabled],
@@ -305,12 +307,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
 	box-sizing: content-box;
-	-webkit-appearance: textfield;
+	appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 fieldset {
@@ -329,7 +331,7 @@ textarea {
 }
 
 optgroup {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 table {
@@ -354,7 +356,7 @@ textarea {
 	color: var(--text-color);
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-family: Raleway, Arial, Helvetica;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 	line-height: var(--text-line-height);
@@ -463,9 +465,8 @@ html {
 }
 
 *,
-*:before,
-*:after {
-	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*::before,
+*::after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 	box-sizing: inherit;
 }
 
@@ -499,7 +500,7 @@ blockquote small {
 
 blockquote cite::before,
 blockquote small::before {
-	content: "\2014\00a0";
+	content: "— ";
 }
 
 blockquote > :last-child {
@@ -536,7 +537,7 @@ li > ol {
 }
 
 dt {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 dd {
@@ -565,7 +566,7 @@ td {
 }
 
 th {
-	font-weight: normal;
+	font-weight: 400;
 	text-align: initial;
 	background: rgba(0, 0, 0, 0.05);
 }
@@ -612,7 +613,7 @@ input[type="submit"] {
 	background-color: #ee1133;
 	background-color: var(--button-color);
 	text-decoration: none;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -631,7 +632,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
@@ -697,7 +698,7 @@ textarea {
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	color: #21759b;
 	text-decoration: none;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 14px;
 	font-size: 0.875rem;
 	line-height: normal;
@@ -723,19 +724,19 @@ textarea {
 /*--------------------------------------------------------------
 # - Clearings
 --------------------------------------------------------------*/
-.clearfix:before,
-.clearfix:after,
-.post-navigation .nav-links:before,
-.post-navigation .nav-links:after,
-.comment-navigation:before,
-.comment-navigation:after {
+.clearfix::before,
+.clearfix::after,
+.post-navigation .nav-links::before,
+.post-navigation .nav-links::after,
+.comment-navigation::before,
+.comment-navigation::after {
 	display: table;
 	content: "";
 }
 
-.clearfix:after,
-.post-navigation .nav-links:after,
-.comment-navigation:after {
+.clearfix::after,
+.post-navigation .nav-links::after,
+.comment-navigation::after {
 	clear: both;
 }
 
@@ -794,9 +795,9 @@ textarea {
 	text-decoration: none;
 	font-size: 32px;
 	font-size: 2rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
@@ -867,9 +868,9 @@ textarea {
 	color: var(--navi-text-color);
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -955,9 +956,9 @@ textarea {
 	text-decoration: none;
 	font-size: 17px;
 	font-size: 1.0625rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--navi-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--navi-font-weight);
 	text-transform: none;
 	text-transform: var(--navi-text-transform);
@@ -1136,9 +1137,9 @@ textarea {
 	color: var(--title-color);
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
@@ -1203,7 +1204,7 @@ textarea {
 .more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -1213,7 +1214,7 @@ textarea {
 	clear: both;
 	margin: 0 0 2em;
 	word-spacing: 0.5em;
-	font-weight: bold;
+	font-weight: 700;
 	font-size: 16px;
 	font-size: 1rem;
 }
@@ -1356,14 +1357,14 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	color: var(--light-text-color);
 }
 
-.post-navigation .nav-links .nav-previous .nav-link-text:before {
+.post-navigation .nav-links .nav-previous .nav-link-text::before {
 	margin-right: 5px;
-	content: "\2190";
+	content: "←";
 }
 
-.post-navigation .nav-links .nav-next .nav-link-text:after {
+.post-navigation .nav-links .nav-next .nav-link-text::after {
 	margin-left: 5px;
-	content: "\2192";
+	content: "→";
 }
 
 /*--------------------------------------------------------------
@@ -1387,9 +1388,9 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 	color: var(--widget-title-color);
 	font-size: 18px;
 	font-size: 1.125rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--widget-title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--widget-title-font-weight);
 	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
@@ -1440,12 +1441,12 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .pagination a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
 .pagination .current {
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Infinite Scroll Pagination */
@@ -1485,14 +1486,14 @@ body.categories-hidden .post-wrapper .type-post.comments-off .entry-footer {
 .infinite-scroll #infinite-handle span:hover {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
 
 .blog-grid-layout.infinite-scroll .content-archive .post-wrapper #infinite-handle,
 .blog-grid-layout.infinite-scroll .content-archive .post-wrapper .infinite-loader {
-	grid-column: 1 / span 2;
+	grid-column: 1/span 2;
 }
 
 /*--------------------------------------------------------------
@@ -1520,7 +1521,7 @@ p.has-background {
 .has-drop-cap:not(:focus)::first-letter {
 	font-size: 4.5rem;
 	line-height: 0.7;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Code Block */
@@ -1622,7 +1623,7 @@ p.has-background {
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
@@ -1996,9 +1997,9 @@ div.wp-block-columns {
 	color: var(--widget-title-color);
 	font-size: 18px;
 	font-size: 1.125rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--widget-title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--widget-title-font-weight);
 	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
@@ -2075,7 +2076,7 @@ div.wp-block-columns {
 
 .search-form .search-submit:hover,
 .search-form .search-submit:active {
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
@@ -2109,9 +2110,9 @@ div.wp-block-columns {
 	color: var(--widget-title-color);
 	font-size: 18px;
 	font-size: 1.125rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--widget-title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--widget-title-font-weight);
 	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
@@ -2248,14 +2249,14 @@ div.wp-block-columns {
 	color: var(--text-color);
 }
 
-.comment-navigation .nav-previous a:before {
+.comment-navigation .nav-previous a::before {
 	margin-right: 5px;
-	content: "\2190";
+	content: "←";
 }
 
-.comment-navigation .nav-next a:after {
+.comment-navigation .nav-next a::after {
 	margin-left: 5px;
-	content: "\2192";
+	content: "→";
 }
 
 /* Comment Form */
@@ -2278,7 +2279,7 @@ div.wp-block-columns {
 .comment-form label {
 	display: inline-block;
 	min-width: 150px;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .comment-form textarea {
@@ -2292,7 +2293,7 @@ div.wp-block-columns {
 .comment-form input[type="checkbox"] + label {
 	display: inline;
 	padding-left: 0.5em;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 .comment-reply-title small a {
@@ -2300,7 +2301,7 @@ div.wp-block-columns {
 	text-transform: none;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: normal;
+	font-weight: 400;
 }
 
 /*--------------------------------------------------------------
@@ -2518,7 +2519,7 @@ figcaption,
 
 .breadcrumbs .trail-browse {
 	margin-right: 0.5rem;
-	font-weight: normal;
+	font-weight: 400;
 	font-size: 15px;
 	font-size: 0.9375rem;
 }
@@ -2527,40 +2528,40 @@ figcaption,
 	list-style: none;
 }
 
-.breadcrumbs .trail-items li:after {
+.breadcrumbs .trail-items li::after {
 	padding: 0 0.5em;
-	content: "\00bb"; /* Raquo */
+	content: "»"; /* Raquo */
 }
 
-.trail-separator-slash .trail-items li:after {
-	content: "\002F";
+.trail-separator-slash .trail-items li::after {
+	content: "/";
 }
 
-.trail-separator-dash .trail-items li:after {
-	content: "\2013";
+.trail-separator-dash .trail-items li::after {
+	content: "–";
 }
 
-.trail-separator-bull .trail-items li:after {
-	content: "\2022";
+.trail-separator-bull .trail-items li::after {
+	content: "•";
 }
 
-.trail-separator-arrow-bracket .trail-items li:after {
-	content: "\003e";
+.trail-separator-arrow-bracket .trail-items li::after {
+	content: ">";
 }
 
-.trail-separator-raquo .trail-items li:after {
-	content: "\00bb";
+.trail-separator-raquo .trail-items li::after {
+	content: "»";
 }
 
-.trail-separator-single-arrow .trail-items li:after {
-	content: "\2192";
+.trail-separator-single-arrow .trail-items li::after {
+	content: "→";
 }
 
-.trail-separator-double-arrow .trail-items li:after {
-	content: "\21D2";
+.trail-separator-double-arrow .trail-items li::after {
+	content: "⇒";
 }
 
-.breadcrumbs .trail-items li:last-of-type:after {
+.breadcrumbs .trail-items li:last-of-type::after {
 	display: none;
 }
 
@@ -2680,7 +2681,7 @@ ul.related-posts-list {
 	}
 
 	.related-posts-list li > a {
-		grid-row: 1 / span 2;
+		grid-row: 1/span 2;
 	}
 
 	.related-posts-list li .wp-post-image {
@@ -2948,7 +2949,7 @@ ul.related-posts-list {
 .tzwb-tabbed-content .tzwb-tabnavi li a:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -2994,7 +2995,7 @@ ul.related-posts-list {
 
 .tzwb-social-icons .social-icons-menu li a:hover,
 .tzwb-social-icons .social-icons-menu li a:active {
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 	text-decoration: none;
 }
@@ -3285,7 +3286,7 @@ ul.related-posts-list {
 
 	.blog-list-layout .content-archive .post-wrapper .has-post-thumbnail .entry-footer {
 		grid-row: 2;
-		grid-column: 1 / span 2;
+		grid-column: 1/span 2;
 		max-width: 100%;
 	}
 
@@ -3305,6 +3306,7 @@ ul.related-posts-list {
 
 /* CSS Grid Fallback for Internet Explorer */
 @media only screen and (min-width: 40em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
 	/* Post Navigation */
 	.post-navigation .nav-links {
 		display: flex;
@@ -3610,6 +3612,7 @@ ul.related-posts-list {
 ## - Media Queries for Print
 --------------------------------------------------------------*/
 @media print {
+
 	/* Hide elements */
 	form,
 	button,
@@ -3859,6 +3862,7 @@ ul.related-posts-list {
 --------------------------------------------------------------*/
 @media only screen and (min-width: 55em) {
 	@supports (display: grid) {
+
 		/* Sidebar Left Layout */
 		.sidebar-left .site-content {
 			grid-template-columns: 3fr 7fr;
@@ -3876,6 +3880,7 @@ ul.related-posts-list {
 
 /* CSS Grid Fallback for Internet Explorer */
 @media only screen and (min-width: 55em) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
 	/* Sidebar Left Layout */
 	.sidebar-left .content-area {
 		order: 2;
@@ -3894,6 +3899,7 @@ ul.related-posts-list {
 # - Page Templates
 --------------------------------------------------------------*/
 @media only screen and (min-width: 55em) {
+
 	/* No Sidebar Template */
 	.no-sidebar .site-content {
 		display: block;

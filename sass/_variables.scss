@@ -63,8 +63,8 @@ $themeColors: (
 );
 
 // Theme Fonts
-$baseFont: Raleway, Arial, Helvetica;
-$titleFont: Quicksand, Tahoma, Arial;
+$baseFont: Raleway, Arial, Helvetica, sans-serif;
+$titleFont: Quicksand, Tahoma, Arial, sans-serif;
 $themeFonts: (
 	--text-font        : $baseFont,
 	--title-font       : $titleFont,

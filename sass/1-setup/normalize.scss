@@ -146,7 +146,7 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
 	cursor: pointer;
-	-webkit-appearance: button;
+	appearance: button;
 }
 
 button[disabled],
@@ -177,12 +177,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 input[type="search"] {
 	box-sizing: content-box;
-	-webkit-appearance: textfield;
+	appearance: textfield;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+	appearance: none;
 }
 
 fieldset {

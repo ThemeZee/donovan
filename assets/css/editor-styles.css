@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*
  * Editor Styles
  *
@@ -27,7 +29,7 @@
 	--link-color: #ee1133;
 	--button-color: #ee1133;
 	--button-text-color: #fff;
-	--button-hover-color: #D5001A;
+	--button-hover-color: #d5001a;
 	--button-hover-text-color: #fff;
 	--navi-color: #202020;
 	--navi-text-color: #fff;
@@ -43,10 +45,10 @@
 	--footer-text-color: #fff;
 	--footer-hover-text-color: rgba(255, 255, 255, 0.5);
 	--footer-border-color: rgba(255, 255, 255, 0.035);
-	--text-font: Raleway, Arial, Helvetica;
-	--title-font: Quicksand, Tahoma, Arial;
-	--navi-font: Quicksand, Tahoma, Arial;
-	--widget-title-font: Quicksand, Tahoma, Arial;
+	--text-font: raleway, arial, helvetica, sans-serif;
+	--title-font: quicksand, tahoma, arial, sans-serif;
+	--navi-font: quicksand, tahoma, arial, sans-serif;
+	--widget-title-font: quicksand, tahoma, arial, sans-serif;
 	--title-font-weight: normal;
 	--navi-font-weight: normal;
 	--widget-title-font-weight: normal;
@@ -106,9 +108,9 @@ body.block-editor-page .editor-post-title__block .editor-post-title__input {
 	color: var(--title-color);
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
@@ -181,7 +183,7 @@ body.donovan-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-
 	color: var(--text-color);
 	font-size: 16px;
 	font-size: 1rem;
-	font-family: Raleway, Arial, Helvetica;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
 	font-family: var(--text-font);
 	line-height: 1.75;
 	line-height: var(--text-line-height);
@@ -343,7 +345,7 @@ body.donovan-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-
 	display: block;
 	color: #202020;
 	color: var(--text-color);
-	font-family: Raleway, Arial, Helvetica;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
 	font-family: var(--text-font);
 	font-size: 16px;
 	font-size: 1rem;
@@ -354,7 +356,7 @@ body.donovan-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-
 .wp-block-quote__citation::before,
 .wp-block-pullquote__citation::before,
 .wp-block-pullquote cite::before {
-	content: "\2014\00a0";
+	content: "— ";
 }
 
 .wp-block-pullquote:not(.is-style-solid-color) .wp-block-pullquote__citation {
@@ -404,7 +406,7 @@ body.donovan-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-
 }
 
 .editor-styles-wrapper th {
-	font-weight: normal;
+	font-weight: 400;
 	text-align: initial;
 	background: rgba(0, 0, 0, 0.05);
 }
@@ -461,7 +463,7 @@ p.has-background {
 .has-drop-cap:not(:focus)::first-letter {
 	font-size: 4.5rem;
 	line-height: 0.7;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 /* Code Block */
@@ -563,7 +565,7 @@ p.has-background {
 
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):hover,
 .wp-block-button:not(.is-style-outline) .wp-block-button__link:not(.has-text-color):not(.has-background):active {
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
@@ -791,9 +793,9 @@ div.wp-block-columns {
 	color: var(--widget-title-color);
 	font-size: 20px;
 	font-size: 1.25rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--widget-title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--widget-title-font-weight);
 	text-transform: none;
 	text-transform: var(--widget-title-text-transform);
@@ -1005,9 +1007,9 @@ div.wp-block-columns {
 	color: var(--title-color);
 	font-size: 24px;
 	font-size: 1.5rem;
-	font-family: Quicksand, Tahoma, Arial;
+	font-family: Quicksand, Tahoma, Arial, sans-serif;
 	font-family: var(--title-font);
-	font-weight: normal;
+	font-weight: 400;
 	font-weight: var(--title-font-weight);
 	text-transform: none;
 	text-transform: var(--title-text-transform);
@@ -1051,7 +1053,7 @@ div.wp-block-columns {
 	margin: 0 1rem;
 	color: rgba(0, 0, 0, 0.5);
 	color: var(--light-text-color);
-	content: "\2013";
+	content: "–";
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-entry-meta > .tz-meta-field:last-child::after {
@@ -1106,12 +1108,12 @@ div.wp-block-columns {
 .edit-post-visual-editor .tz-magazine-block .tz-more-link:active {
 	color: #fff;
 	color: var(--button-hover-text-color);
-	background-color: #D5001A;
+	background-color: #d5001a;
 	background-color: var(--button-hover-color);
 }
 
 .edit-post-visual-editor .tz-magazine-block .tz-more-link::after {
-	content: " \00BB";
+	content: " »";
 }
 
 @media only screen and (min-width: 960px) {
